@@ -19,12 +19,49 @@ body {
     right: 8em;
     display: flex;
     justify-content: space-between;
-    /* width: 100%; */
     box-sizing: border-box;
     border: 2px solid rgb(175, 194, 168);
 }
 
-@media screen and (max-width: 800px) {
+.div-center {
+    position: relative;
+    background-color: blue;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    width: 40%;
+    top: 8em;
+    font-size: 25px;
+}
+
+.bouttons {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.bouttons a {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2) 10%, rgb(252, 90, 90) 90%);
+}
+
+.bouttons a:hover {
+    background-image: linear-gradient(to right, rgba(187, 0, 0, 0.2) 10%, rgb(0, 0, 0) 90%);
+}
+
+.div-center .fleche {
+    position: relative;
+    top: 5em;
+}
+
+.div-center .fleche:hover {
+    width: 78px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
     .navbar {
         position: absolute;
         padding: 40px;
@@ -32,9 +69,34 @@ body {
         right: 6em;
         display: flex;
         justify-content: space-between;
-        /* width: 100%; */
         box-sizing: border-box;
         border: 2px solid rgb(175, 194, 168);
+    }
+    .div-center {
+        position: relative;
+        background-color: blue;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        width: 36%;
+        top: 7em;
+    }
+    .div-center p {
+        font-size: 18px;
+    }
+    .div-center h1 {
+        font-size: 22px;
+    }
+    .bouttons a {
+        font-size: 16px;
+    }
+    .div-center .fleche {
+        position: relative;
+        top: 4em;
+    }
+    .div-center .fleche:hover {
+        width: 78px;
+        cursor: pointer;
     }
 }
 
@@ -55,5 +117,32 @@ body {
     }
     .a-home {
         font-size: 15px;
+    }
+    .div-center {
+        position: relative;
+        background-color: blue;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        width: 36%;
+        top: 6em;
+    }
+    .div-center p {
+        font-size: 13px;
+    }
+    .div-center h1 {
+        font-size: 16px;
+    }
+    .bouttons a {
+        font-size: 8px;
+    }
+    .div-center .fleche {
+        position: relative;
+        top: 3em;
+        width: 50px;
+    }
+    .div-center .fleche:hover {
+        width: 58px;
+        cursor: pointer;
     }
 }
