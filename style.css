@@ -198,6 +198,7 @@ aside {
 }
 
 .grid {
+    position: static;
     width: 80%;
     height: auto;
     margin: 30px auto;
@@ -205,12 +206,14 @@ aside {
 }
 
 .grid .col-1 {
+    /* position: static; */
     display: flex;
     width: 20%;
     height: 250px;
     text-align: center;
     align-items: center;
     justify-content: center;
+    /* background-color: #5b0005; */
 }
 
 .grid .col-2 {
@@ -244,7 +247,7 @@ aside {
     margin-right: auto;
     width: 60%;
     height: 250px;
-    background-color: rgb(8, 21, 26);
+    /* background-color: rgb(8, 21, 26); */
 }
 
 .box {
@@ -336,6 +339,54 @@ aside {
     ;
 }
 
+
+/* ---------------------------------------------------FOOTER-------------------------------------------------- */
+
+.gallery-items-foot {
+    position: static;
+    width: 100%;
+    height: 200px;
+    /* background-color: #5b0f17; */
+}
+
+footer .gallery .grid .col-4 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-4 .ft {
+    font-size: 12px;
+}
+
+.grid-ft {
+    width: 25%;
+    position: relative;
+    height: auto;
+    margin: 20px auto;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    top: -100px;
+}
+
+.grid-ft img {
+    width: 30px;
+    justify-content: space-between;
+}
+
+footer .gallery .grid .col-1 {
+    display: flex;
+    position: relative;
+    align-items: baseline;
+}
+
+footer .gallery .grid .col-1 .guil2 {
+    position: relative;
+    top: 180px;
+}
+
 @media screen and (max-width: 900px) {
     header {
         background-position: 75% 75%;
@@ -384,19 +435,25 @@ aside {
         width: 90%;
     }
     #formulaire form label {
-        font-size: 18px;
+        font-size: 16px;
     }
     #formulaire form .f-control {
         padding: 0px;
-        font-size: 16px;
+        font-size: 14px;
         width: 100%;
     }
     .btn {
-        font-size: 24px;
+        font-size: 20px;
     }
     .choice span {
         padding: 8px;
-        font-size: 14px;
+        font-size: 12px;
+    }
+    #formulaire form {
+        width: 450px;
+    }
+    #formulaire form p {
+        font-size: 20px;
     }
 }
 
