@@ -161,6 +161,27 @@ aside {
     width: 150px;
 }
 
+.img-batman {
+    position: static;
+    display: flex;
+    margin-left: 0px;
+    margin-right: 0px;
+    justify-content: space-between;
+    text-align: center;
+    background-color: transparent;
+    height: auto;
+}
+
+.img-batman img {
+    width: 22em;
+}
+
+.img-batman h1 strong {
+    position: relative;
+    top: 6.6em;
+    left: 3.1em;
+}
+
 @media screen and (max-width: 900px) {
     header {
         background-position: 75% 75%;
@@ -203,6 +224,10 @@ aside {
     .div-center .fleche:hover {
         width: 78px;
         cursor: pointer;
+    }
+    .bloc p {
+        font-size: 20px;
+        width: 90%;
     }
 }
 
@@ -285,5 +310,13 @@ aside {
     .bloc {
         margin-left: 70px;
         margin-right: 15px;
+    }
+    .img-batman img {
+        width: 10em;
+    }
+    .img-batman h1 strong {
+        position: relative;
+        top: 2.1em;
+        left: 2.6em;
     }
 }
