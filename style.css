@@ -12,6 +12,9 @@ body {
     background-color: black;
 }
 
+
+/* -------------------------------------------NAVBAR---------------------------------------------------------- */
+
 .navbar {
     position: absolute;
     padding: 60px;
@@ -33,6 +36,12 @@ body {
 .a-home:hover {
     text-decoration: underline;
 }
+
+
+/* ---------------------------------------------------END NAVBAR------------------------------------------------- */
+
+
+/* -------------------------------------------------HEADER-------------------------------------------------------- */
 
 .div-center {
     position: relative;
@@ -63,7 +72,7 @@ body {
 }
 
 .bouttons a:hover {
-    background-image: linear-gradient(to right, rgba(187, 0, 0, 0.2) 10%, rgb(0, 0, 0) 90%);
+    background-image: linear-gradient(to right, rgba(187, 0, 0, 0.2) 5%, rgb(0, 0, 0) 95%);
 }
 
 .div-center .fleche {
@@ -92,6 +101,12 @@ header {
     background-position: 0% 0%;
 }
 
+
+/* ------------------------------------------------END HEADER------------------------------------------ */
+
+
+/* ----------------------------------------------------ASIDE--------------------------------------------- */
+
 aside {
     position: fixed;
     top: 200px;
@@ -102,6 +117,9 @@ aside {
 .reseaux-socio {
     text-align: center;
 }
+
+
+/* ----------------------------------------------END ASIDE--------------------------------------------- */
 
 @media screen and (max-width: 900px) {
     header {
