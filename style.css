@@ -68,7 +68,7 @@ body {
     padding: 18px;
     font-family: "Arial Narrow";
     letter-spacing: 2px;
-    background-image: linear-gradient(to right, rgb(249 249 249 / 20%) 10%, rgb(183 9 9) 90%);
+    background-image: linear-gradient(to right, #b5675b 5%, #5b0005 95%);
 }
 
 .bouttons a:hover {
@@ -267,6 +267,75 @@ aside {
     height: auto;
 }
 
+
+/* -----------------------------------------------FORMULAIRE--------------------------------------- */
+
+#formulaire {
+    margin: 30px auto;
+    width: 100%;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to right, #48453d 10%, #0f222c 90%);
+}
+
+#formulaire form {
+    width: 600px;
+    height: 500px;
+    /* background-color: aqua; */
+}
+
+#formulaire form p {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#formulaire form label {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#formulaire form .f-control {
+    padding: 0px;
+    font-size: 20px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom-style: outset;
+}
+
+.confirmation {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    color: white;
+    font-size: 30px;
+    padding: 8px;
+    background-image: linear-gradient(to right, #787773 10%, #5b0f17 90%);
+}
+
+.btn:hover {
+    background-image: linear-gradient(to right, rgba(187, 0, 0, 0.2) 10%, rgb(0, 0, 0) 90%);
+}
+
+.choice {
+    display: flex;
+    margin-left: 100px;
+    margin-right: 100px;
+    justify-content: space-between;
+    /* background-color: chocolate; */
+}
+
+.choice span {
+    padding: 10px;
+    background-color: transparent;
+    border: 2px solid #295974;
+    ;
+}
+
 @media screen and (max-width: 900px) {
     header {
         background-position: 75% 75%;
@@ -313,6 +382,21 @@ aside {
     .bloc p {
         font-size: 20px;
         width: 90%;
+    }
+    #formulaire form label {
+        font-size: 18px;
+    }
+    #formulaire form .f-control {
+        padding: 0px;
+        font-size: 16px;
+        width: 100%;
+    }
+    .btn {
+        font-size: 24px;
+    }
+    .choice span {
+        padding: 8px;
+        font-size: 14px;
     }
 }
 
