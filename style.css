@@ -20,7 +20,7 @@ body {
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
-    border: 2px solid rgb(175, 194, 168);
+    border: 2px solid rgb(128, 77, 77);
     font-weight: bold;
     letter-spacing: 2px;
 }
@@ -88,10 +88,25 @@ header {
     width: 100vw;
     background-image: url(Assets/Illustrations/Bathome1.png);
     background-size: cover;
-    background-position: 75% 75%;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+}
+
+aside {
+    position: fixed;
+    top: 200px;
+    right: 30px;
+    /* background-color: green; */
+}
+
+.reseaux-socio {
+    text-align: center;
 }
 
 @media screen and (max-width: 900px) {
+    header {
+        background-position: 75% 75%;
+    }
     .navbar {
         position: absolute;
         padding: 40px;
@@ -121,7 +136,7 @@ header {
         font-size: 22px;
     }
     .bouttons a {
-        font-size: 16px;
+        font-size: 10px;
     }
     .div-center .fleche {
         position: relative;
@@ -169,6 +184,10 @@ header {
     .div-center h1 {
         font-size: 16px;
     }
+    .bouttons {
+        width: 220px;
+        right: 40px;
+    }
     .bouttons a {
         font-size: 8px;
     }
@@ -180,5 +199,14 @@ header {
     .div-center .fleche:hover {
         width: 58px;
         cursor: pointer;
+    }
+    aside {
+        top: 150px;
+    }
+    aside a img {
+        width: 50px;
+    }
+    aside div img {
+        width: 20px;
     }
 }
