@@ -23,6 +23,11 @@ body {
     border: 2px solid rgb(175, 194, 168);
 }
 
+.a-home:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 .div-center {
     position: relative;
     background-color: blue;
@@ -61,6 +66,14 @@ body {
     cursor: pointer;
 }
 
+header {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(Assets/Illustrations/Bathome1.png);
+    background-size: cover;
+    background-position: 75% 75%;
+}
+
 @media screen and (max-width: 900px) {
     .navbar {
         position: absolute;
@@ -80,6 +93,10 @@ body {
         text-align: center;
         width: 36%;
         top: 7em;
+    }
+    .a-home:hover {
+        font-weight: bold;
+        text-decoration: underline;
     }
     .div-center p {
         font-size: 18px;
@@ -117,6 +134,10 @@ body {
     }
     .a-home {
         font-size: 15px;
+    }
+    .a-home:hover {
+        font-weight: bold;
+        text-decoration: underline;
     }
     .div-center {
         position: relative;
