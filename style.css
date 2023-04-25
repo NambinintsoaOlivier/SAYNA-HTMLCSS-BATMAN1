@@ -157,6 +157,10 @@ aside {
     text-align: center;
 }
 
+.nemesis {
+    width: 150px;
+}
+
 @media screen and (max-width: 900px) {
     header {
         background-position: 75% 75%;
