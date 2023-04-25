@@ -149,6 +149,11 @@ aside {
     flex-wrap: wrap;
 }
 
+.gallery-items img {
+    width: 100%;
+    height: auto;
+}
+
 .desc {
     font-size: 18px;
     font-family: "Arial narrow";
@@ -180,6 +185,15 @@ aside {
     position: relative;
     top: 6.6em;
     left: 3.1em;
+}
+
+.justice {
+    position: static;
+}
+
+.justice img {
+    width: 100%;
+    height: auto;
 }
 
 @media screen and (max-width: 900px) {
@@ -301,9 +315,9 @@ aside {
     .bloc h1 strong {
         font-size: 20px;
     }
-    .gallery img {
+    /* .gallery img {
         width: 235px;
-    }
+    } */
     .desc {
         font-size: 14px;
     }
@@ -318,5 +332,30 @@ aside {
         position: relative;
         top: 2.1em;
         left: 2.6em;
+    }
+}
+
+@media screen and (max-height: 660px) {
+    .navbar {
+        height: 130px;
+    }
+    .div-center {
+        top: 233px;
+    }
+    .div-center .fleche {
+        position: relative;
+        top: 1em;
+    }
+    .div-center p {
+        position: relative;
+        top: -20px;
+    }
+    .div-center h1 {
+        position: relative;
+        top: -30px;
+        font-size: 28px;
+    }
+    .bouttons a {
+        font-size: 10px;
     }
 }
