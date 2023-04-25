@@ -3,13 +3,13 @@
     padding: 0;
     text-decoration: none;
     list-style: none;
-    overflow-x: none;
 }
 
 body {
     font-family: "Corbel Light";
     color: white;
     background-color: black;
+    overflow-x: hidden;
 }
 
 
@@ -98,7 +98,7 @@ header {
     background-image: url(Assets/Illustrations/Bathome1.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 0% 0%;
+    background-position: 75% 75%;
 }
 
 
@@ -120,6 +120,42 @@ aside {
 
 
 /* ----------------------------------------------END ASIDE--------------------------------------------- */
+
+
+/* ------------------------------------------------MAIN------------------------------------------------- */
+
+.bloc {
+    position: static;
+    /* background-color: blue; */
+    margin-left: 100px;
+    margin-right: 80px;
+    height: auto;
+}
+
+.bloc p {
+    font-size: 20px;
+    font-family: 'Candara';
+    width: 80%;
+    text-align: justify;
+}
+
+.bloc h1 strong {
+    font-size: 32px;
+}
+
+.gallery {
+    display: flex;
+    grid-gap: 70px;
+    flex-wrap: wrap;
+}
+
+.desc {
+    font-size: 18px;
+    font-family: "Arial narrow";
+    letter-spacing: 0.5px;
+    padding: 15px;
+    text-align: center;
+}
 
 @media screen and (max-width: 900px) {
     header {
@@ -226,5 +262,24 @@ aside {
     }
     aside div img {
         width: 20px;
+    }
+    .bloc p {
+        font-size: 15px;
+        font-family: 'Candara';
+        width: 80%;
+        text-align: justify;
+    }
+    .bloc h1 strong {
+        font-size: 20px;
+    }
+    .gallery img {
+        width: 235px;
+    }
+    .desc {
+        font-size: 14px;
+    }
+    .bloc {
+        margin-left: 70px;
+        margin-right: 15px;
     }
 }
