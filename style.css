@@ -328,8 +328,7 @@ aside {
     display: flex;
     margin-left: 100px;
     margin-right: 100px;
-    justify-content: space-between;
-    /* background-color: chocolate; */
+    justify-content: space-evenly;
 }
 
 .choice span {
@@ -367,7 +366,7 @@ footer .gallery .grid .col-4 {
     margin: 20px auto;
     display: flex;
     text-align: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     top: -100px;
 }
 
@@ -385,6 +384,12 @@ footer .gallery .grid .col-1 {
 footer .gallery .grid .col-1 .guil2 {
     position: relative;
     top: 180px;
+}
+
+@media screen and (max-width: 1074px) {
+    .col-3 p {
+        font-size: 12px;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -457,6 +462,40 @@ footer .gallery .grid .col-1 .guil2 {
     }
 }
 
+@media screen and (max-width: 823px) {
+    .col-3 p {
+        font-size: 9.5px;
+    }
+    footer .gallery .grid .col-1 img {
+        width: 60px;
+    }
+}
+
+@media screen and (max-height: 660px) {
+    .navbar {
+        height: 130px;
+    }
+    .div-center {
+        top: 233px;
+    }
+    .div-center .fleche {
+        position: relative;
+        top: 1em;
+    }
+    .div-center p {
+        position: relative;
+        top: -20px;
+    }
+    .div-center h1 {
+        position: relative;
+        top: -30px;
+        font-size: 28px;
+    }
+    .bouttons a {
+        font-size: 10px;
+    }
+}
+
 @media screen and (max-width: 550px) {
     .navbar {
         position: absolute;
@@ -468,6 +507,7 @@ footer .gallery .grid .col-1 .guil2 {
         /* width: 100%; */
         box-sizing: border-box;
         border: 2px solid rgb(175, 194, 168);
+        height: 70px;
     }
     .navbar a img {
         width: 60px;
@@ -545,41 +585,192 @@ footer .gallery .grid .col-1 .guil2 {
         top: 2.1em;
         left: 2.6em;
     }
+    .col-3 p {
+        margin: 4px;
+        font-size: 10px;
+        width: 122px;
+    }
 }
 
-@media screen and (max-height: 660px) {
-    .navbar {
-        height: 130px;
+@media screen and (max-width: 414px) {
+    .col-3 p {
+        margin: 4px;
+        font-size: 8px;
+        width: 90px;
     }
-    .div-center {
-        top: 233px;
+    .bouttons {
+        top: 45px;
     }
     .div-center .fleche {
-        position: relative;
-        top: 1em;
+        top: 5em;
+    }
+    #formulaire form {
+        width: 340px;
+    }
+    .choice {
+        margin-left: 30px;
+        margin-right: 40px;
+    }
+    footer .gallery .grid .col-1 img {
+        width: 35px;
+    }
+    footer .gallery .grid .col-4 p {
+        font-size: 10px;
+    }
+    .grid-ft img {
+        width: 18px;
+    }
+    .grid-ft {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    html {
+        overflow-x: hidden;
+    }
+    .navbar {
+        left: 2em;
+        right: 2em;
+        height: 50px;
+    }
+    .nav-link .a-home {
+        font-size: 15px;
+    }
+    .div-center {
+        width: 60%;
+        top: 6em;
+        font-size: 25px;
     }
     .div-center p {
+        font-size: 10px;
+    }
+    .div-center h1 {
+        font-size: 18px;
+        top: -20px;
+    }
+    .bouttons {
+        right: 26px;
+    }
+    .bouttons a {
+        font-size: 7px;
+    }
+    .div-center .fleche {
+        width: 45px;
+        top: 2em;
+    }
+    .bloc {
+        margin-left: 22px;
+        margin-right: 22px;
+    }
+    .bloc p {
+        font-size: 12px;
+        width: 250px;
+    }
+    .gallery {
+        grid-gap: 25px;
+    }
+    .gallery-items img {
+        width: 50%;
+    }
+    .desc {
+        font-size: 10px;
+    }
+    .nemesis {
+        width: 75px;
+    }
+    .img-batman h1 strong {
+        top: 2.8em;
+        left: 0.8em;
+        font-size: 26px;
+    }
+    .gallery .grid .col-4 {
+        width: 125px;
+    }
+    footer .gallery {
+        height: 180px;
+    }
+    footer .gallery .grid {
+        height: 110px;
+    }
+    .grid {
+        height: 140px;
+    }
+    .grid .col-1 {
+        height: 130px;
+        width: 0px;
+    }
+    .grid .col-2 {
+        height: 130px;
+    }
+    .grid .col-3 {
+        height: 130px;
+    }
+    .col-3 p {
+        margin: 4px;
+        font-size: 5px;
+        width: 75px;
+    }
+    .video {
         position: relative;
         top: -20px;
     }
-    .div-center h1 {
-        position: relative;
-        top: -30px;
-        font-size: 28px;
+    #formulaire form {
+        width: 170px;
     }
-    .bouttons a {
+    #formulaire form p {
+        font-size: 14px;
+    }
+    #formulaire form label {
         font-size: 10px;
     }
-}
-
-@media screen and (max-width: 1074px) {
-    .col-3 p {
+    #formulaire form .f-control {
         font-size: 12px;
     }
-}
-
-@media screen and (max-width: 823px) {
-    .col-3 p {
+    #formulaire form span {
+        font-size: 9px;
+    }
+    .choice {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .btn {
         font-size: 10px;
+    }
+    .gallery-items-foot {
+        position: static;
+        width: 100%;
+        height: 200px;
+    }
+    footer .gallery .grid .col-1 {
+        position: static;
+        width: 20%;
+        height: 110px;
+    }
+    footer .gallery .grid .col-1 img {
+        position: static;
+        width: 20px;
+    }
+    footer .gallery .grid .col-4 p {
+        font-size: 5px;
+    }
+    footer .gallery .grid .col-4 {
+        height: 110px;
+    }
+    footer .gallery .grid .col-4 .wb {
+        width: 10px;
+    }
+    .col-4 .ft {
+        font-size: 12px;
+    }
+    .grid-ft {
+        width: 50%;
+        top: -110px;
+    }
+    .grid-ft img {
+        width: 8px;
+    }
+    footer .gallery .grid .col-1 .guil2 {
+        top: 90px;
     }
 }
