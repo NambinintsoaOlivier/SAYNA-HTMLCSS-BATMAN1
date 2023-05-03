@@ -5,7 +5,12 @@
     list-style: none;
 }
 
+html {
+    background-color: black!important;
+}
+
 body {
+    /* position: static; */
     font-family: "Corbel Light";
     color: white;
     background-color: black;
@@ -18,14 +23,18 @@ body {
 .navbar {
     position: absolute;
     padding: 60px;
-    left: 8em;
-    right: 8em;
+    left: 0em;
+    right: 0em;
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
-    border: 2px solid rgb(128, 77, 77);
+    border-bottom: 5px solid rgba(141, 92, 83, 0.4);
     font-weight: bold;
     letter-spacing: 2px;
+}
+
+.navbar a img:hover {
+    filter: invert(33%) sepia(100%) saturate(8);
 }
 
 .nav-link .a-home {
@@ -42,6 +51,17 @@ body {
 
 
 /* -------------------------------------------------HEADER-------------------------------------------------------- */
+
+main {
+    position: absolute;
+    top: 0;
+    /* padding: 100%; */
+    left: 4em;
+    right: 4em;
+    height: 320em;
+    box-sizing: border-box;
+    border: 2.5px solid rgba(141, 92, 83, 0.4);
+}
 
 .div-center {
     position: relative;
@@ -92,7 +112,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header {
+#header {
     height: 100vh;
     width: 100vw;
     background-image: url(Assets/Illustrations/Bathome1.png);
@@ -110,12 +130,16 @@ header {
 aside {
     position: fixed;
     top: 200px;
-    right: 30px;
+    right: 45px;
     /* background-color: green; */
 }
 
 .reseaux-socio {
     text-align: center;
+}
+
+aside a img:hover {
+    filter: invert(33%) sepia(100%) saturate(8);
 }
 
 
@@ -124,11 +148,18 @@ aside {
 
 /* ------------------------------------------------MAIN------------------------------------------------- */
 
+.container {
+    position: initial;
+    width: 100%;
+    height: 40em;
+    text-align: center;
+}
+
 .bloc {
-    position: static;
+    top: 10%;
+    margin-left: 50px;
+    margin-right: 50px;
     /* background-color: blue; */
-    margin-left: 100px;
-    margin-right: 80px;
     height: auto;
 }
 
@@ -189,7 +220,9 @@ aside {
 }
 
 .justice {
-    position: static;
+    position: relative;
+    /* background-color: #5b0005; */
+    background-repeat: no-repeat;
 }
 
 .justice img {
@@ -279,9 +312,10 @@ aside {
 /* -----------------------------------------------FORMULAIRE--------------------------------------- */
 
 #formulaire {
+    top: 72%;
     margin: 30px auto;
     width: 100%;
-    height: 550px;
+    height: 630px;
     display: flex;
     justify-content: center;
     background-image: linear-gradient(to right, #48453d 10%, #0f222c 90%);
