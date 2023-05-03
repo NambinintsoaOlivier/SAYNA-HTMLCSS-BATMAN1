@@ -56,9 +56,9 @@ main {
     position: absolute;
     top: 0;
     /* padding: 100%; */
-    left: 4em;
-    right: 4em;
-    height: 320em;
+    left: 6em;
+    right: 6em;
+    height: 405em;
     box-sizing: border-box;
     border: 2.5px solid rgba(141, 92, 83, 0.4);
 }
@@ -131,6 +131,7 @@ aside {
     position: fixed;
     top: 200px;
     right: 45px;
+    z-index: 1;
     /* background-color: green; */
 }
 
@@ -220,15 +221,21 @@ aside a img:hover {
 }
 
 .justice {
+    width: 140vw;
+    right: 10em;
+    height: 50vw;
     position: relative;
-    /* background-color: #5b0005; */
+    background-color: transparent;
     background-repeat: no-repeat;
+    background-image: url(Assets/Illustrations/Bathome11.png);
 }
 
-.justice img {
-    width: 100%;
+
+/* .justice img {
+    position: static;
     height: auto;
-}
+    width: 100vw;
+} */
 
 .grid {
     position: static;
@@ -312,9 +319,10 @@ aside a img:hover {
 /* -----------------------------------------------FORMULAIRE--------------------------------------- */
 
 #formulaire {
-    top: 72%;
+    position: relative;
     margin: 30px auto;
-    width: 100%;
+    right: 5.5em;
+    width: 100vw;
     height: 630px;
     display: flex;
     justify-content: center;
