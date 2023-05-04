@@ -10,7 +10,6 @@ html {
 }
 
 body {
-    /* position: static; */
     font-family: "Corbel Light";
     color: white;
     background-color: black;
@@ -56,10 +55,9 @@ body {
 main {
     position: absolute;
     top: 0;
-    /* padding: 100%; */
-    left: 6em;
-    right: 6em;
-    height: 405em;
+    left: 6%;
+    right: 6%;
+    height: auto;
     box-sizing: border-box;
     border: 2.5px solid rgba(141, 92, 83, 0.4);
     border-bottom: none;
@@ -68,7 +66,6 @@ main {
 
 .div-center {
     position: relative;
-    /* background-color: blue; */
     margin-right: auto;
     margin-left: auto;
     text-align: center;
@@ -117,7 +114,7 @@ main {
 
 #header {
     height: 100vh;
-    width: 100vw;
+    width: 102vw;
     background-image: url(Assets/Illustrations/Bathome1.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -135,7 +132,6 @@ aside {
     top: 200px;
     right: 45px;
     z-index: 1;
-    /* background-color: green; */
 }
 
 .reseaux-socio {
@@ -155,7 +151,7 @@ aside a img:hover {
 .container {
     position: initial;
     width: 100%;
-    height: 40em;
+    height: 44em;
     text-align: center;
 }
 
@@ -163,7 +159,6 @@ aside a img:hover {
     top: 10%;
     margin-left: 50px;
     margin-right: 50px;
-    /* background-color: blue; */
     height: auto;
 }
 
@@ -181,7 +176,7 @@ aside a img:hover {
 .gallery {
     display: flex;
     text-align: center;
-    grid-gap: 70px;
+    grid-gap: 50px;
     flex-wrap: wrap;
 }
 
@@ -203,42 +198,39 @@ aside a img:hover {
 }
 
 .img-batman {
-    position: static;
-    display: flex;
-    margin-left: 0px;
-    margin-right: 0px;
-    justify-content: space-between;
-    text-align: center;
-    background-color: transparent;
+    width: 104vw;
+    right: 9em;
     height: auto;
+    position: relative;
+    display: flex;
 }
 
 .img-batman img {
     width: 22em;
+    margin-left: auto;
+    display: flex;
+    text-align: left;
+    position: relative;
 }
 
 .img-batman h1 strong {
     position: relative;
     top: 6.6em;
-    left: 3.1em;
+    left: 4.5em;
 }
 
 .justice {
     width: 140vw;
-    right: 10em;
-    height: 50vw;
+    right: 9em;
+    height: auto;
     position: relative;
     background-color: transparent;
-    background-repeat: no-repeat;
-    background-image: url(Assets/Illustrations/Bathome11.png);
 }
 
-
-/* .justice img {
-    position: static;
+.justice img {
     height: auto;
-    width: 100vw;
-} */
+    width: 104vw;
+}
 
 .grid {
     position: static;
@@ -249,14 +241,12 @@ aside a img:hover {
 }
 
 .grid .col-1 {
-    /* position: static; */
     display: flex;
     width: 20%;
     height: 250px;
     text-align: center;
     align-items: center;
     justify-content: center;
-    /* background-color: #5b0005; */
 }
 
 .grid .col-2 {
@@ -295,7 +285,6 @@ aside a img:hover {
     margin-right: auto;
     width: 60%;
     height: 250px;
-    /* background-color: rgb(8, 21, 26); */
 }
 
 .box {
@@ -322,11 +311,10 @@ aside a img:hover {
 /* -----------------------------------------------FORMULAIRE--------------------------------------- */
 
 #formulaire {
+    width: 108vw;
+    right: 9em;
+    height: auto;
     position: relative;
-    margin: 30px auto;
-    right: 5.5em;
-    width: 100vw;
-    height: 630px;
     display: flex;
     justify-content: center;
     background-image: linear-gradient(to right, #48453d 10%, #0f222c 90%);
@@ -334,8 +322,7 @@ aside a img:hover {
 
 #formulaire form {
     width: 600px;
-    height: 500px;
-    /* background-color: aqua; */
+    height: auto;
 }
 
 #formulaire form p {
@@ -356,6 +343,8 @@ aside a img:hover {
     background-color: transparent;
     border: none;
     border-bottom-style: outset;
+    color: white;
+    text-decoration: none;
 }
 
 .confirmation {
@@ -421,7 +410,6 @@ aside a img:hover {
     position: static;
     width: 100%;
     height: 200px;
-    /* background-color: #5b0f17; */
 }
 
 footer .gallery .grid .col-4 {
@@ -462,242 +450,265 @@ footer .gallery .grid .col-1 .guil2 {
     top: 180px;
 }
 
-@media screen and (max-width: 1074px) {
-    .col-3 p {
-        font-size: 12px;
+@media screen and (max-width:1270px) {
+    .container {
+        height: 48em;
+    }
+    .gallery {
+        grid-gap: 38px;
     }
 }
 
-@media screen and (max-width: 900px) {
-    header {
-        background-position: 75% 75%;
+@media screen and (max-width:1134px) {
+    .col-3 p {
+        font-size: 13px;
     }
+}
+
+@media screen and (max-width: 1019px) {
+    .bouttons a {
+        padding: 8px;
+    }
+    .grid-ft img {
+        width: 18px;
+    }
+}
+
+@media screen and (max-width:953px) {
     .navbar {
-        position: absolute;
-        padding: 40px;
-        left: 6em;
-        right: 6em;
-        display: flex;
-        justify-content: space-between;
-        box-sizing: border-box;
-        border: 2px solid rgb(175, 194, 168);
+        padding: 35px;
     }
-    .div-center {
-        position: relative;
-        /* background-color: blue; */
-        margin-right: auto;
-        margin-left: auto;
-        text-align: center;
-        width: 36%;
-        top: 7em;
+    aside a img {
+        width: 4em;
     }
-    .a-home:hover {
-        text-decoration: underline;
+    .reseaux-socio a img {
+        width: 1.2em;
     }
     .div-center p {
-        font-size: 18px;
+        font-size: 15px;
     }
     .div-center h1 {
         font-size: 22px;
     }
-    .bouttons a {
-        font-size: 10px;
+    .bouttons {
+        font-size: 14px;
     }
     .div-center .fleche {
-        position: relative;
-        top: 4em;
+        width: 65px;
     }
-    .div-center .fleche:hover {
-        width: 78px;
-        cursor: pointer;
+    .container {
+        height: 46em;
     }
     .bloc p {
-        font-size: 20px;
+        font-size: 16px;
+    }
+    .bloc h1 strong {
+        font-size: 28px;
+    }
+    .gallery-items img {
         width: 90%;
+    }
+    .gallery-items {
+        width: 28%;
+    }
+    .desc {
+        font-size: 14px;
+    }
+    .nemesis {
+        width: 130px;
+    }
+    .img-batman h1 strong {
+        left: 5em;
+    }
+    .img-batman img {
+        width: 20em;
+    }
+    .bloc p {
+        font-size: 13px;
+    }
+    #formulaire {
+        width: 112vw;
+    }
+    #formulaire form p {
+        font-size: 24px;
     }
     #formulaire form label {
         font-size: 16px;
     }
     #formulaire form .f-control {
-        padding: 0px;
         font-size: 14px;
-        width: 100%;
     }
     .btn {
         font-size: 20px;
     }
-    .choice span {
-        padding: 8px;
-        font-size: 12px;
+    footer .gallery .grid .col-1 a img {
+        width: 3em;
+    }
+    .justice img {
+        width: 110vw;
+    }
+}
+
+@media screen and (max-width:849px) {
+    .bloc p {
+        font-size: 11px;
     }
     #formulaire form {
-        width: 450px;
+        width: 520px;
     }
     #formulaire form p {
         font-size: 20px;
     }
 }
 
-@media screen and (max-width: 823px) {
-    .col-3 p {
-        font-size: 9.5px;
-    }
-    footer .gallery .grid .col-1 img {
-        width: 60px;
-    }
-}
-
-@media screen and (max-height: 660px) {
-    .navbar {
-        height: 130px;
-    }
-    .div-center {
-        top: 233px;
-    }
-    .div-center .fleche {
-        position: relative;
-        top: 1em;
-    }
-    .div-center p {
-        position: relative;
-        top: -20px;
-    }
-    .div-center h1 {
-        position: relative;
-        top: -30px;
-        font-size: 28px;
-    }
+@media screen and (max-width:762px) {
     .bouttons a {
-        font-size: 10px;
+        padding: 4px;
+        font-size: 11px;
+    }
+    #formulaire {
+        width: 128vw;
+    }
+    footer .gallery .grid .col-4 p {
+        font-size: 12px;
     }
 }
 
-@media screen and (max-width: 550px) {
-    .navbar {
-        position: absolute;
-        padding: 15px;
-        left: 2em;
-        right: 2em;
-        display: flex;
-        justify-content: space-between;
-        /* width: 100%; */
-        box-sizing: border-box;
-        border: 2px solid rgb(175, 194, 168);
-        height: 70px;
-    }
+@media screen and (max-width:653px) {
     .navbar a img {
         width: 60px;
     }
-    .a-home {
-        font-size: 15px;
-    }
-    .a-home:hover {
-        text-decoration: underline;
-    }
-    .div-center {
-        position: relative;
-        /* background-color: blue; */
-        margin-right: auto;
-        margin-left: auto;
-        text-align: center;
-        width: 36%;
-        top: 6em;
+    .nav-link .a-home {
+        font-size: 18px;
     }
     .div-center p {
-        font-size: 13px;
-    }
-    .div-center h1 {
-        font-size: 16px;
-    }
-    .bouttons {
-        width: 220px;
-        right: 40px;
-    }
-    .bouttons a {
-        font-size: 8px;
-    }
-    .div-center .fleche {
-        position: relative;
-        top: 3em;
-        width: 50px;
-    }
-    .div-center .fleche:hover {
-        width: 58px;
-        cursor: pointer;
-    }
-    aside {
-        top: 150px;
-    }
-    aside a img {
-        width: 50px;
-    }
-    aside div img {
-        width: 20px;
+        font-size: 12px;
     }
     .bloc p {
-        font-size: 15px;
-        font-family: 'Candara';
-        width: 80%;
-        text-align: justify;
+        font-size: 11px;
     }
-    .bloc h1 strong {
-        font-size: 20px;
+    #formulaire form {
+        width: 450px;
     }
-    /* .gallery img {
-        width: 235px;
-    } */
-    .desc {
-        font-size: 14px;
+    .choice span {
+        padding: 8px;
     }
-    .bloc {
-        margin-left: 70px;
-        margin-right: 15px;
+    #formulaire form p {
+        font-size: 17px;
     }
-    .img-batman img {
-        width: 10em;
+    #formulaire form label {
+        font-size: 13px;
     }
-    .img-batman h1 strong {
-        position: relative;
-        top: 2.1em;
-        left: 2.6em;
+    #formulaire form .f-control {
+        font-size: 13px;
     }
-    .col-3 p {
-        margin: 4px;
-        font-size: 10px;
-        width: 122px;
+    .gallery {
+        grid-gap: 35px;
+    }
+    .grid {
+        width: 100%;
     }
 }
 
-@media screen and (max-width: 414px) {
-    .col-3 p {
-        margin: 4px;
-        font-size: 8px;
-        width: 90px;
+@media screen and (max-width:614px) {
+    .gallery {
+        grid-gap: 30px;
     }
-    .bouttons {
-        top: 45px;
-    }
-    .div-center .fleche {
-        top: 5em;
-    }
-    #formulaire form {
-        width: 340px;
-    }
-    .choice {
-        margin-left: 30px;
-        margin-right: 40px;
-    }
-    footer .gallery .grid .col-1 img {
-        width: 35px;
-    }
-    footer .gallery .grid .col-4 p {
+    .desc {
         font-size: 10px;
     }
-    .grid-ft img {
-        width: 18px;
+    .div-center {
+        width: 45%;
     }
-    .grid-ft {
-        width: 40%;
+    #formulaire form {
+        width: 400px;
+    }
+    .choice span {
+        padding: 4px;
+        font-size: 12px;
+    }
+    .btn {
+        font-size: 14px;
+    }
+    .img-batman {
+        width: 110vw;
+    }
+    .bloc h1 strong {
+        font-size: 22px;
+    }
+    .div-center .fleche {
+        width: 48px;
+    }
+}
+
+@media screen and (max-width:571px) {
+    .bouttons a {
+        padding: 3px;
+        font-size: 8px;
+    }
+    .img-batman h1 strong {
+        left: 6.5em;
+    }
+    .img-batman img {
+        width: 16em;
+    }
+    .div-center {
+        top: 8em;
+    }
+    .bloc p {
+        font-size: 10px;
+    }
+    .nemesis {
+        width: 95px;
+    }
+    #formulaire form {
+        width: 332px;
+    }
+    .choice span {
+        padding: 3px;
+        font-size: 9px;
+    }
+    footer .gallery .grid .col-1 a img {
+        width: 2em;
+    }
+    .grid-ft img {
+        width: 13px;
+    }
+    .gallery .grid .col-1 a img {
+        width: 12px;
+    }
+    .gallery .grid .col-1 a img {
+        width: 26px;
+    }
+    .div-center p {
+        font-size: 11px;
+    }
+    .div-center h1 {
+        font-size: 20px;
+    }
+    #formulaire form {
+        width: 280px;
+    }
+    .justice img {
+        width: 116vw;
+    }
+}
+
+@media screen and (max-width:506px) {
+    .bloc p {
+        font-size: 9px;
+    }
+    .gallery {
+        grid-gap: 20px;
+    }
+    .div-center {
+        width: 55%;
+    }
+}
+
+@media screen and (max-width:428px) {
+    .bloc p {
+        font-size: 8px;
     }
 }
 
@@ -706,9 +717,11 @@ footer .gallery .grid .col-1 .guil2 {
         overflow-x: hidden;
     }
     .navbar {
-        left: 2em;
-        right: 2em;
         height: 50px;
+        border-bottom: 1px solid rgba(141, 92, 83, 0.4);
+    }
+    .navbar a img {
+        width: 50px;
     }
     .nav-link .a-home {
         font-size: 15px;
@@ -725,40 +738,56 @@ footer .gallery .grid .col-1 .guil2 {
         font-size: 18px;
         top: -20px;
     }
-    .bouttons {
-        right: 26px;
-    }
     .bouttons a {
-        font-size: 7px;
+        font-size: 6px;
+        padding: 10px;
     }
     .div-center .fleche {
-        width: 45px;
+        width: 38px;
         top: 2em;
+    }
+    .bloc h1 strong {
+        font-size: 10px;
     }
     .bloc {
         margin-left: 22px;
         margin-right: 22px;
     }
     .bloc p {
-        font-size: 12px;
+        font-size: 10px;
         width: 250px;
     }
+    .desc {
+        font-size: 4px;
+    }
     .gallery {
-        grid-gap: 25px;
+        height: 125px;
+        grid-gap: 16px;
     }
     .gallery-items img {
-        width: 50%;
-    }
-    .desc {
-        font-size: 10px;
+        width: 100%;
     }
     .nemesis {
-        width: 75px;
+        width: 65px;
     }
-    .img-batman h1 strong {
-        top: 2.8em;
-        left: 0.8em;
-        font-size: 26px;
+    .img-batman {
+        width: 100vw;
+        right: 2em;
+    }
+    .img-batman img {
+        width: 8em;
+    }
+    .justice img {
+        position: relative;
+        margin-right: auto;
+        margin-left: auto;
+        height: auto;
+        width: 100vw;
+        display: flex;
+        left: 22px;
+    }
+    .fleche-g-d {
+        width: 14px;
     }
     .gallery .grid .col-4 {
         width: 125px;
@@ -770,17 +799,19 @@ footer .gallery .grid .col-1 .guil2 {
         height: 110px;
     }
     .grid {
-        height: 140px;
+        width: 100%;
     }
     .grid .col-1 {
-        height: 130px;
-        width: 0px;
-    }
-    .grid .col-2 {
-        height: 130px;
+        height: 125px;
     }
     .grid .col-3 {
-        height: 130px;
+        width: 70%;
+        height: 125px;
+    }
+    .grid .col-2 {
+        width: 30%;
+        height: 125px;
+        background-color: rgb(0, 0, 0);
     }
     .col-3 p {
         margin: 4px;
@@ -790,6 +821,9 @@ footer .gallery .grid .col-1 .guil2 {
     .video {
         position: relative;
         top: -20px;
+    }
+    #formulaire {
+        right: 5em;
     }
     #formulaire form {
         width: 170px;
@@ -849,4 +883,192 @@ footer .gallery .grid .col-1 .guil2 {
     footer .gallery .grid .col-1 .guil2 {
         top: 90px;
     }
+    .bouttons a {
+        padding: 8px;
+    }
 }
+
+@media screen and (max-width: 327px) {
+    .bouttons a {
+        padding: px;
+        font-size: 5px;
+    }
+}
+
+@media screen and (max-width:280px) {
+    main {
+        height: 416vh;
+    }
+    .navbar {
+        padding: 8px;
+        border-bottom: 2px solid rgba(141, 92, 83, 0.4);
+    }
+    .navbar a img {
+        width: 2em;
+    }
+    .nav-link .a-home {
+        font-size: 10px;
+    }
+    #header {
+        height: 28vh;
+        width: 100vw;
+    }
+    .div-center {
+        top: 2.5em;
+        width: 50%;
+    }
+    .div-center p {
+        font-size: 6px;
+    }
+    .div-center h1 {
+        font-size: 8px;
+    }
+    .bouttons {
+        padding: 6px;
+        font-size: 3px;
+    }
+    .bouttons a {
+        padding: 4px;
+    }
+    .div-center .fleche {
+        position: static;
+        width: 16px;
+    }
+    aside {
+        right: 4px;
+        top: 65px;
+    }
+    aside a img {
+        width: 2em;
+    }
+    .reseaux-socio a img {
+        width: 0.5em;
+    }
+    .container {
+        height: 14em;
+    }
+    .bloc {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .bloc h1 strong {
+        font-size: 8px;
+    }
+    .bloc p {
+        margin: 3px;
+        font-size: 5px;
+    }
+    .desc {
+        font-size: 3px;
+    }
+    .gallery {
+        height: 125px;
+        grid-gap: 16px;
+    }
+    .nemesis {
+        width: 28px;
+    }
+    .img-batman {
+        width: 100vw;
+        right: 2em;
+    }
+    .img-batman img {
+        width: 8em;
+    }
+    .justice img {
+        position: relative;
+        margin-right: auto;
+        margin-left: auto;
+        height: auto;
+        width: 100vw;
+        display: flex;
+        left: 55px;
+    }
+    .fleche-g-d {
+        width: 14px;
+    }
+    .grid {
+        width: 100%;
+    }
+    .grid .col-1 {
+        height: 125px;
+    }
+    .grid .col-3 {
+        width: 70%;
+        height: 125px;
+    }
+    .grid .col-2 {
+        width: 30%;
+        height: 125px;
+        background-color: rgb(0, 0, 0);
+    }
+    #formulaire {
+        width: 118%;
+        right: 19px;
+    }
+    #formulaire form p {
+        font-size: 8px;
+    }
+    #formulaire form .f-control {
+        font-size: 6px;
+        color: white;
+        border-bottom: 0.1px solid #5a5353;
+    }
+    #formulaire form label {
+        font-size: 5px;
+    }
+    #formulaire form {
+        width: 10em;
+    }
+    form span {
+        font-size: 4px;
+    }
+    input[type='checkbox'] {
+        width: 6px;
+    }
+    .choice span {
+        padding: 8px;
+        border: 1px solid #295974;
+    }
+    .choice {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .btn {
+        padding: 4px;
+        font-size: 8px;
+    }
+    footer .gallery .grid .col-1 a img {
+        width: 1em;
+    }
+    .col-4 .col-3 p {
+        font-size: 5px;
+    }
+    .col-4 p {
+        font-size: 6px;
+    }
+    footer .gallery {
+        height: auto;
+    }
+    footer .gallery .grid .col-4 {
+        height: auto;
+    }
+    footer .gallery .grid .col-1 .guil2 {
+        top: 100px;
+    }
+    .col-4 .ft {
+        font-size: 4px;
+    }
+    .grid-ft img {
+        top: 38px;
+        width: 6px;
+        justify-content: space-between;
+        position: relative;
+    }
+    .wb {
+        width: 7px;
+    }
+}
+
+
+/* -------------------------------------------------------------------------------- */
