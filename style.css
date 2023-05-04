@@ -27,7 +27,7 @@ body {
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
-    border-bottom: 5px solid rgba(141, 92, 83, 0.4);
+    border-bottom: 5px solid #BCBBBD;
     border-top: none;
     font-weight: bold;
     letter-spacing: 2px;
@@ -55,11 +55,11 @@ body {
 main {
     position: absolute;
     top: 0;
-    left: 6%;
-    right: 6%;
+    left: 102px;
+    right: 102px;
     height: auto;
     box-sizing: border-box;
-    border: 2.5px solid rgba(141, 92, 83, 0.4);
+    border: 2.5px solid #BCBBBD;
     border-bottom: none;
     border-top: none;
 }
@@ -171,6 +171,10 @@ aside a img:hover {
 
 .bloc h1 strong {
     font-size: 32px;
+    /* en arrivant sur la page */
+    visibility: hidden;
+    transition: 5s;
+    visibility: visible;
 }
 
 .gallery {
@@ -183,6 +187,10 @@ aside a img:hover {
 .gallery-items img {
     width: 100%;
     height: auto;
+}
+
+.gallery-items img:hover {
+    border: 1px solid white;
 }
 
 .desc {
@@ -199,7 +207,7 @@ aside a img:hover {
 
 .img-batman {
     width: 104vw;
-    right: 9em;
+    right: 13em;
     height: auto;
     position: relative;
     display: flex;
@@ -216,7 +224,7 @@ aside a img:hover {
 .img-batman h1 strong {
     position: relative;
     top: 6.6em;
-    left: 4.5em;
+    left: 6.5em;
 }
 
 .justice {
@@ -347,6 +355,53 @@ aside a img:hover {
     text-decoration: none;
 }
 
+.f-control option {
+    background-color: #0f222c;
+}
+
+.pop {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(to right, #48453d 10%, #0f222c 90%);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.popup {
+    width: 600px;
+    height: 500px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border-radius: 25px;
+    align-items: center;
+    transition: all 5s ease-in-out;
+}
+
+.pop:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.pop .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup .close:hover {
+    color: #06d85f;
+}
+
 .confirmation {
     display: flex;
     justify-content: center;
@@ -357,6 +412,7 @@ aside a img:hover {
     font-size: 30px;
     padding: 8px;
     background-image: linear-gradient(to right, #787773 10%, #5b0f17 90%);
+    transition: all 0.3s ease-out;
 }
 
 .btn:hover {
@@ -382,21 +438,11 @@ aside a img:hover {
 
 .pop {
     margin: 30px auto;
-    width: 100%;
+    width: 50%;
     height: 500px;
     display: flex;
     justify-content: center;
-}
-
-.pop div {
-    width: 600px;
-    height: 500px;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    border-radius: 25px;
-    align-items: center;
-    background-image: linear-gradient(to right, #48453d 10%, #0f222c 90%);
+    z-index: 1;
 }
 
 .pop div p {
@@ -462,6 +508,9 @@ footer .gallery .grid .col-1 .guil2 {
 @media screen and (max-width:1134px) {
     .col-3 p {
         font-size: 13px;
+    }
+    .bouttons {
+        font-size: 15px;
     }
 }
 
@@ -611,6 +660,10 @@ footer .gallery .grid .col-1 .guil2 {
 }
 
 @media screen and (max-width:614px) {
+    main {
+        left: 40px;
+        right: 40px;
+    }
     .gallery {
         grid-gap: 30px;
     }
@@ -713,6 +766,12 @@ footer .gallery .grid .col-1 .guil2 {
 }
 
 @media screen and (max-width: 375px) {
+    main {
+        height: 110em;
+    }
+    aside {
+        right: 80px;
+    }
     html {
         overflow-x: hidden;
     }
@@ -776,6 +835,7 @@ footer .gallery .grid .col-1 .guil2 {
     }
     .img-batman img {
         width: 8em;
+        right: 30px;
     }
     .justice img {
         position: relative;
@@ -885,6 +945,9 @@ footer .gallery .grid .col-1 .guil2 {
     }
     .bouttons a {
         padding: 8px;
+    }
+    .img-batman h1 strong {
+        left: 3.3em;
     }
 }
 
