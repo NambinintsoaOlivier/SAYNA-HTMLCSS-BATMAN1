@@ -130,7 +130,7 @@ main {
 aside {
     position: fixed;
     top: 200px;
-    right: 45px;
+    right: 50px;
     z-index: 1;
 }
 
@@ -164,7 +164,7 @@ aside a img:hover {
 
 .bloc p {
     font-size: 20px;
-    font-family: 'Candara';
+    font-family: inherit;
     width: 80%;
     text-align: justify;
 }
@@ -195,7 +195,7 @@ aside a img:hover {
 
 .desc {
     font-size: 18px;
-    font-family: "Arial narrow";
+    font-family: revert;
     letter-spacing: 0.5px;
     padding: 15px;
     text-align: center;
@@ -214,7 +214,7 @@ aside a img:hover {
 }
 
 .img-batman img {
-    width: 22em;
+    width: 16em;
     margin-left: auto;
     display: flex;
     text-align: left;
@@ -228,8 +228,8 @@ aside a img:hover {
 }
 
 .justice {
-    width: 140vw;
-    right: 9em;
+    width: 100vw;
+    right: 152px;
     height: auto;
     position: relative;
     background-color: transparent;
@@ -237,7 +237,7 @@ aside a img:hover {
 
 .justice img {
     height: auto;
-    width: 104vw;
+    width: 100vw;
 }
 
 .grid {
@@ -315,12 +315,16 @@ aside a img:hover {
     height: auto;
 }
 
+.grid-ft a:hover {
+    filter: invert(33%) sepia(100%) saturate(8);
+}
+
 
 /* -----------------------------------------------FORMULAIRE--------------------------------------- */
 
 #formulaire {
-    width: 108vw;
-    right: 9em;
+    width: 100vw;
+    right: 102px;
     height: auto;
     position: relative;
     display: flex;
@@ -350,9 +354,10 @@ aside a img:hover {
     width: 100%;
     background-color: transparent;
     border: none;
+    border-width: thin;
     border-bottom-style: outset;
     color: white;
-    text-decoration: none;
+    font-family: inherit;
 }
 
 .f-control option {
@@ -408,7 +413,8 @@ aside a img:hover {
 }
 
 .btn {
-    color: white;
+    color: #d3d2d2;
+    font-family: unset;
     font-size: 30px;
     padding: 8px;
     background-image: linear-gradient(to right, #787773 10%, #5b0f17 90%);
@@ -465,6 +471,11 @@ footer .gallery .grid .col-4 {
     align-items: center;
 }
 
+footer .gallery .grid .col-1 img {
+    position: static;
+    width: 65px;
+}
+
 .col-4 .ft {
     font-size: 12px;
 }
@@ -496,36 +507,69 @@ footer .gallery .grid .col-1 .guil2 {
     top: 180px;
 }
 
-@media screen and (max-width:1270px) {
+
+/* -----------------------------------------------RESPONSIVE----------------------------------------------- */
+
+@media screen and (max-width: 1319px) {
     .container {
         height: 48em;
     }
     .gallery {
-        grid-gap: 38px;
+        grid-gap: 10px;
+    }
+    .gallery-items {
+        width: 30%;
+    }
+    .gallery-items img {
+        width: 90%;
+    }
+    .desc {
+        font-size: 16px;
+    }
+    .grid {
+        width: 100%;
     }
 }
 
-@media screen and (max-width:1134px) {
+@media screen and (max-width: 1150px) {
+    .navbar {
+        padding: 50px;
+    }
+    .div-center h1 {
+        font-size: 32px;
+    }
+    .div-center p {
+        font-size: 16px;
+    }
+    .bouttons a {
+        padding: 12px;
+        font-size: 15px;
+    }
+    .div-center .fleche {
+        width: 56px;
+    }
     .col-3 p {
         font-size: 13px;
     }
-    .bouttons {
-        font-size: 15px;
-    }
 }
 
-@media screen and (max-width: 1019px) {
-    .bouttons a {
-        padding: 8px;
-    }
-    .grid-ft img {
-        width: 18px;
-    }
-}
-
-@media screen and (max-width:953px) {
+@media screen and (max-width:990px) {
     .navbar {
-        padding: 35px;
+        padding: 40px;
+    }
+    .div-center {
+        top: 8em;
+    }
+    .div-center p {
+        font-size: 14px;
+    }
+    .bouttons a {
+        padding: 10px;
+        font-size: 12px;
+    }
+    .div-center .fleche {
+        top: 4.5em;
+        width: 45px;
     }
     aside a img {
         width: 4em;
@@ -533,428 +577,166 @@ footer .gallery .grid .col-1 .guil2 {
     .reseaux-socio a img {
         width: 1.2em;
     }
-    .div-center p {
-        font-size: 15px;
-    }
-    .div-center h1 {
-        font-size: 22px;
-    }
-    .bouttons {
-        font-size: 14px;
-    }
-    .div-center .fleche {
-        width: 65px;
-    }
-    .container {
-        height: 46em;
-    }
-    .bloc p {
-        font-size: 16px;
-    }
-    .bloc h1 strong {
-        font-size: 28px;
-    }
-    .gallery-items img {
-        width: 90%;
-    }
-    .gallery-items {
-        width: 28%;
-    }
-    .desc {
-        font-size: 14px;
-    }
-    .nemesis {
-        width: 130px;
-    }
-    .img-batman h1 strong {
-        left: 5em;
-    }
-    .img-batman img {
-        width: 20em;
-    }
-    .bloc p {
-        font-size: 13px;
-    }
-    #formulaire {
-        width: 112vw;
+    #formulaire form {
+        width: 500px;
+        height: auto;
     }
     #formulaire form p {
         font-size: 24px;
     }
     #formulaire form label {
-        font-size: 16px;
-    }
-    #formulaire form .f-control {
-        font-size: 14px;
-    }
-    .btn {
-        font-size: 20px;
-    }
-    footer .gallery .grid .col-1 a img {
-        width: 3em;
-    }
-    .justice img {
-        width: 110vw;
-    }
-}
-
-@media screen and (max-width:849px) {
-    .bloc p {
-        font-size: 11px;
-    }
-    #formulaire form {
-        width: 520px;
-    }
-    #formulaire form p {
-        font-size: 20px;
-    }
-}
-
-@media screen and (max-width:762px) {
-    .bouttons a {
-        padding: 4px;
-        font-size: 11px;
-    }
-    #formulaire {
-        width: 128vw;
-    }
-    footer .gallery .grid .col-4 p {
-        font-size: 12px;
-    }
-}
-
-@media screen and (max-width:653px) {
-    .navbar a img {
-        width: 60px;
-    }
-    .nav-link .a-home {
         font-size: 18px;
     }
-    .div-center p {
-        font-size: 12px;
-    }
-    .bloc p {
-        font-size: 11px;
-    }
-    #formulaire form {
-        width: 450px;
-    }
-    .choice span {
-        padding: 8px;
-    }
-    #formulaire form p {
-        font-size: 17px;
-    }
-    #formulaire form label {
-        font-size: 13px;
-    }
     #formulaire form .f-control {
-        font-size: 13px;
+        font-size: 18px;
     }
-    .gallery {
-        grid-gap: 35px;
-    }
-    .grid {
-        width: 100%;
+    .btn {
+        font-size: 22px;
     }
 }
 
-@media screen and (max-width:614px) {
-    main {
-        left: 40px;
-        right: 40px;
+@media screen and (max-width:860px) {
+    .navbar {
+        padding: 30px;
     }
-    .gallery {
-        grid-gap: 30px;
+    .navbar a img {
+        width: 70px;
     }
-    .desc {
+    .nav-link .a-home {
+        color: white;
+        font-size: 18px;
+    }
+    .div-center h1 {
+        font-size: 24px;
+    }
+    .bouttons a {
+        padding: 9px;
         font-size: 10px;
+    }
+    .bloc h1 strong {
+        font-size: 20px;
+    }
+    .nemesis {
+        width: 110px;
+    }
+    .grid-ft img {
+        width: 20px;
+        justify-content: space-between;
+    }
+    .bloc p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:756px) {
+    .container {
+        height: 40em;
+    }
+    .navbar {
+        padding: 20px;
+    }
+    .div-center p {
+        font-size: 11px;
     }
     .div-center {
         width: 45%;
     }
+    .div-center h1 {
+        font-size: 20px;
+    }
+    .bloc p {
+        font-size: 11px;
+    }
+    main {
+        left: 85px;
+        right: 85px;
+    }
+    .justice {
+        right: 135px;
+    }
+    #formulaire {
+        right: 85px;
+    }
     #formulaire form {
-        width: 400px;
+        width: 420px;
     }
-    .choice span {
-        padding: 4px;
-        font-size: 12px;
+    .choice {
+        margin-left: 50px;
+        margin-right: 50px;
     }
-    .btn {
-        font-size: 14px;
-    }
-    .img-batman {
-        width: 110vw;
-    }
-    .bloc h1 strong {
-        font-size: 22px;
-    }
-    .div-center .fleche {
+    footer .gallery .grid .col-1 img {
         width: 48px;
     }
 }
 
-@media screen and (max-width:571px) {
+@media screen and (max-width:685px) {
     .bouttons a {
-        padding: 3px;
+        position: relative;
+        top: 35px;
         font-size: 8px;
     }
-    .img-batman h1 strong {
-        left: 6.5em;
-    }
     .img-batman img {
-        width: 16em;
+        width: 12em;
     }
-    .div-center {
-        top: 8em;
+    #formulaire form {
+        width: 350px;
+    }
+    #formulaire form p {
+        font-size: 18px;
+    }
+    #formulaire form label {
+        font-size: 12px;
+    }
+    #formulaire form .f-control {
+        font-size: 14px;
+    }
+    form span {
+        font-size: 12px;
+    }
+    .btn {
+        font-size: 15px;
+    }
+    .pop {
+        width: 80%;
+    }
+    footer .gallery .grid .col-4 p {
+        font-size: 10px;
+    }
+    .grid-ft img {
+        width: 16px;
+    }
+}
+
+@media screen and (max-width:628px) {
+    .gallery .grid .col-1 a img {
+        width: 22px;
     }
     .bloc p {
         font-size: 10px;
     }
-    .nemesis {
-        width: 95px;
-    }
-    #formulaire form {
-        width: 332px;
-    }
-    .choice span {
-        padding: 3px;
-        font-size: 9px;
-    }
-    footer .gallery .grid .col-1 a img {
-        width: 2em;
-    }
-    .grid-ft img {
-        width: 13px;
-    }
-    .gallery .grid .col-1 a img {
-        width: 12px;
-    }
-    .gallery .grid .col-1 a img {
-        width: 26px;
-    }
-    .div-center p {
-        font-size: 11px;
-    }
-    .div-center h1 {
-        font-size: 20px;
-    }
-    #formulaire form {
-        width: 280px;
-    }
-    .justice img {
-        width: 116vw;
-    }
-}
-
-@media screen and (max-width:506px) {
-    .bloc p {
-        font-size: 9px;
-    }
-    .gallery {
-        grid-gap: 20px;
+    .desc {
+        font-size: 7px;
     }
     .div-center {
         width: 55%;
-    }
-}
-
-@media screen and (max-width:428px) {
-    .bloc p {
-        font-size: 8px;
-    }
-}
-
-@media screen and (max-width: 375px) {
-    main {
-        height: 110em;
-    }
-    aside {
-        right: 80px;
-    }
-    html {
-        overflow-x: hidden;
-    }
-    .navbar {
-        height: 50px;
-        border-bottom: 1px solid rgba(141, 92, 83, 0.4);
-    }
-    .navbar a img {
-        width: 50px;
-    }
-    .nav-link .a-home {
-        font-size: 15px;
-    }
-    .div-center {
-        width: 60%;
-        top: 6em;
-        font-size: 25px;
     }
     .div-center p {
         font-size: 10px;
     }
     .div-center h1 {
         font-size: 18px;
-        top: -20px;
-    }
-    .bouttons a {
-        font-size: 6px;
-        padding: 10px;
-    }
-    .div-center .fleche {
-        width: 38px;
-        top: 2em;
-    }
-    .bloc h1 strong {
-        font-size: 10px;
-    }
-    .bloc {
-        margin-left: 22px;
-        margin-right: 22px;
-    }
-    .bloc p {
-        font-size: 10px;
-        width: 250px;
-    }
-    .desc {
-        font-size: 4px;
-    }
-    .gallery {
-        height: 125px;
-        grid-gap: 16px;
-    }
-    .gallery-items img {
-        width: 100%;
-    }
-    .nemesis {
-        width: 65px;
-    }
-    .img-batman {
-        width: 100vw;
-        right: 2em;
-    }
-    .img-batman img {
-        width: 8em;
-        right: 30px;
-    }
-    .justice img {
-        position: relative;
-        margin-right: auto;
-        margin-left: auto;
-        height: auto;
-        width: 100vw;
-        display: flex;
-        left: 22px;
-    }
-    .fleche-g-d {
-        width: 14px;
-    }
-    .gallery .grid .col-4 {
-        width: 125px;
-    }
-    footer .gallery {
-        height: 180px;
-    }
-    footer .gallery .grid {
-        height: 110px;
-    }
-    .grid {
-        width: 100%;
-    }
-    .grid .col-1 {
-        height: 125px;
-    }
-    .grid .col-3 {
-        width: 70%;
-        height: 125px;
-    }
-    .grid .col-2 {
-        width: 30%;
-        height: 125px;
-        background-color: rgb(0, 0, 0);
-    }
-    .col-3 p {
-        margin: 4px;
-        font-size: 5px;
-        width: 75px;
-    }
-    .video {
-        position: relative;
-        top: -20px;
-    }
-    #formulaire {
-        right: 5em;
-    }
-    #formulaire form {
-        width: 170px;
-    }
-    #formulaire form p {
-        font-size: 14px;
-    }
-    #formulaire form label {
-        font-size: 10px;
-    }
-    #formulaire form .f-control {
-        font-size: 12px;
-    }
-    #formulaire form span {
-        font-size: 9px;
-    }
-    .choice {
-        margin-left: 0;
-        margin-right: 0;
-    }
-    .btn {
-        font-size: 10px;
-    }
-    .gallery-items-foot {
-        position: static;
-        width: 100%;
-        height: 200px;
-    }
-    footer .gallery .grid .col-1 {
-        position: static;
-        width: 20%;
-        height: 110px;
-    }
-    footer .gallery .grid .col-1 img {
-        position: static;
-        width: 20px;
-    }
-    footer .gallery .grid .col-4 p {
-        font-size: 5px;
-    }
-    footer .gallery .grid .col-4 {
-        height: 110px;
-    }
-    footer .gallery .grid .col-4 .wb {
-        width: 10px;
-    }
-    .col-4 .ft {
-        font-size: 12px;
-    }
-    .grid-ft {
-        width: 50%;
-        top: -110px;
-    }
-    .grid-ft img {
-        width: 8px;
-    }
-    footer .gallery .grid .col-1 .guil2 {
-        top: 90px;
-    }
-    .bouttons a {
-        padding: 8px;
-    }
-    .img-batman h1 strong {
-        left: 3.3em;
     }
 }
 
-@media screen and (max-width: 327px) {
+@media screen and (max-width:595px) {
+    .bloc p {
+        font-size: 9px;
+    }
+    aside {
+        right: 66px;
+    }
     .bouttons a {
-        padding: px;
-        font-size: 5px;
+        font-size: 7px;
     }
 }
 
