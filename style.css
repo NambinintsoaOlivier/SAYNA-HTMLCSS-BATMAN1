@@ -6,7 +6,7 @@
 }
 
 html {
-    background-color: black!important;
+    background-color: rgb(0, 0, 0);
 }
 
 body {
@@ -16,19 +16,30 @@ body {
     overflow-x: hidden;
 }
 
+.ani {
+    position: relative;
+    animation: mymove 1s ease-out 0s 1 reverse;
+}
+
+@keyframes mymove {
+    from {
+        left: 0;
+        opacity: 0;
+    }
+    to {
+        left: 46em;
+        opacity: 1;
+    }
+}
+
 
 /* -------------------------------------------NAVBAR---------------------------------------------------------- */
 
 .navbar {
-    position: absolute;
     padding: 60px;
-    left: 0em;
-    right: 0em;
     display: flex;
     justify-content: space-between;
-    box-sizing: border-box;
-    border-bottom: 5px solid #BCBBBD;
-    border-top: none;
+    border-bottom: 3px solid #BCBBBD;
     font-weight: bold;
     letter-spacing: 2px;
 }
@@ -43,6 +54,10 @@ body {
 }
 
 .a-home:hover {
+    text-decoration: underline;
+}
+
+.active {
     text-decoration: underline;
 }
 
@@ -64,40 +79,46 @@ main {
     border-top: none;
 }
 
+.container {
+    width: 100%;
+    height: 45em;
+    text-align: center;
+}
+
 .div-center {
     position: relative;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
-    width: 42%;
+    height: auto;
+    width: 52%;
     top: 10em;
-    font-size: 25px;
 }
 
 .bouttons {
     position: relative;
     display: flex;
-    justify-content: space-between;
-    font-size: 18px;
-    padding: 10px;
+    justify-content: space-evenly;
 }
 
 .bouttons a {
-    color: white;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
     margin: 1em;
-    padding: 18px;
+    padding: 10px;
     font-family: "Arial Narrow";
     letter-spacing: 2px;
-    background-image: linear-gradient(to right, #b5675b 5%, #5b0005 95%);
+    opacity: 50%;
+    background-image: linear-gradient(to right, #d3aea8 5%, #5b0005 95%);
 }
 
 .bouttons a:hover {
-    background-image: linear-gradient(to right, rgba(187, 0, 0, 0.2) 5%, rgb(0, 0, 0) 95%);
+    opacity: 100%;
 }
 
 .div-center .fleche {
     position: relative;
-    top: 2.5em;
+    top: 16em;
 }
 
 .div-center .fleche:hover {
@@ -107,22 +128,17 @@ main {
 
 .div-center p {
     font-size: 19px;
-    color: rgb(209, 209, 209);
     letter-spacing: 2px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.div-center h1 {
-    font-size: 35px;
-}
-
 #header {
-    height: 100vh;
-    width: 102vw;
+    height: 300vh;
+    width: 100vw;
     background-image: url(Assets/Illustrations/Bathome1.png);
-    background-size: cover;
+    background-position: center top;
+    background-size: 100% auto;
     background-repeat: no-repeat;
-    background-position: 75% 75%;
 }
 
 
@@ -152,15 +168,8 @@ aside a img:hover {
 
 /* ------------------------------------------------MAIN------------------------------------------------- */
 
-.container {
-    position: initial;
-    width: 100%;
-    height: 44em;
-    text-align: center;
-}
-
 .bloc {
-    top: 10%;
+    /* top: 10%; */
     margin-left: 50px;
     margin-right: 50px;
     height: auto;
@@ -177,24 +186,24 @@ aside a img:hover {
     font-size: 32px;
     /* en arrivant sur la page */
     visibility: hidden;
-    transition: 5s;
     visibility: visible;
 }
 
 .gallery {
     display: flex;
-    text-align: center;
+    /* text-align: center; */
     grid-gap: 50px;
     flex-wrap: wrap;
 }
 
 .gallery-items img {
-    width: 100%;
+    width: 90%;
     height: auto;
 }
 
 .gallery-items img:hover {
     border: 1px solid white;
+    width: 100%;
 }
 
 .desc {
@@ -210,19 +219,16 @@ aside a img:hover {
 }
 
 .img-batman {
-    width: 104vw;
-    right: 13em;
+    width: auto;
+    left: 155px;
     height: auto;
     position: relative;
     display: flex;
 }
 
 .img-batman img {
-    width: 16em;
+    width: 20em;
     margin-left: auto;
-    display: flex;
-    text-align: left;
-    position: relative;
 }
 
 .img-batman h1 strong {
@@ -232,11 +238,10 @@ aside a img:hover {
 }
 
 .justice {
-    width: 100vw;
+    width: 100%;
     right: 152px;
     height: auto;
     position: relative;
-    background-color: transparent;
 }
 
 .justice img {
@@ -255,7 +260,7 @@ aside a img:hover {
 .grid .col-1 {
     display: flex;
     width: 20%;
-    height: 250px;
+    height: auto;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -264,7 +269,7 @@ aside a img:hover {
 .grid .col-2 {
     display: flex;
     width: 30%;
-    height: 250px;
+    height: auto;
     background-color: rgb(0, 0, 0);
 }
 
@@ -277,11 +282,15 @@ aside a img:hover {
 
 .grid .col-3 {
     width: 70%;
-    height: 250px;
+    height: auto;
+}
+
+.col-3 div {
+    padding: 12px;
+    height: auto;
 }
 
 .col-3 p {
-    margin: 10px;
     width: 90%;
     font-size: 15px;
 }
@@ -296,7 +305,7 @@ aside a img:hover {
     margin-left: auto;
     margin-right: auto;
     width: 60%;
-    height: 250px;
+    height: auto;
 }
 
 .box {
@@ -312,6 +321,10 @@ aside a img:hover {
     position: static;
     display: flex;
     justify-content: center;
+}
+
+.video img:hover {
+    cursor: pointer;
 }
 
 .video img {
@@ -348,8 +361,7 @@ aside a img:hover {
 }
 
 #formulaire form label {
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 20px;
 }
 
 #formulaire form .f-control {
@@ -367,6 +379,57 @@ aside a img:hover {
 .f-control option {
     background-color: #0f222c;
 }
+
+.confirmation {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    color: #d3d2d2;
+    font-family: unset;
+    font-size: 30px;
+    padding: 8px;
+    background-image: linear-gradient(to right, #787773 10%, #5b0f17 90%);
+    transition: all 0.3s ease-out;
+}
+
+.btn:hover {
+    background-image: linear-gradient(to right, rgba(187, 0, 0, 0.2) 10%, rgb(0, 0, 0) 90%);
+}
+
+.choice {
+    display: flex;
+    margin-left: 100px;
+    margin-right: 100px;
+    justify-content: space-evenly;
+}
+
+input[type="radio"].choix {
+    display: none;
+}
+
+input[type="radio"].choix+label:hover {
+    cursor: pointer;
+    background-color: #00a2ff;
+}
+
+input[type="radio"].choix+label {
+    padding: 6px;
+    background-color: transparent;
+    border: 2px solid #00a2ff;
+    line-height: 1.5;
+    border-radius: 0.3rem;
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+}
+
+input[type="radio"].choix:checked+label {
+    background-color: #00a2ff;
+}
+
+
+/* POPUP */
 
 .pop {
     position: fixed;
@@ -410,41 +473,6 @@ aside a img:hover {
 .popup .close:hover {
     color: #06d85f;
 }
-
-.confirmation {
-    display: flex;
-    justify-content: center;
-}
-
-.btn {
-    color: #d3d2d2;
-    font-family: unset;
-    font-size: 30px;
-    padding: 8px;
-    background-image: linear-gradient(to right, #787773 10%, #5b0f17 90%);
-    transition: all 0.3s ease-out;
-}
-
-.btn:hover {
-    background-image: linear-gradient(to right, rgba(187, 0, 0, 0.2) 10%, rgb(0, 0, 0) 90%);
-}
-
-.choice {
-    display: flex;
-    margin-left: 100px;
-    margin-right: 100px;
-    justify-content: space-evenly;
-}
-
-.choice span {
-    padding: 10px;
-    background-color: transparent;
-    border: 2px solid #295974;
-    ;
-}
-
-
-/* POPUP */
 
 .pop {
     margin: 30px auto;
@@ -515,9 +543,6 @@ footer .gallery .grid .col-1 .guil2 {
 /* -----------------------------------------------RESPONSIVE----------------------------------------------- */
 
 @media screen and (max-width: 1319px) {
-    .container {
-        height: 48em;
-    }
     .gallery {
         grid-gap: 10px;
     }
@@ -535,10 +560,8 @@ footer .gallery .grid .col-1 .guil2 {
     }
 }
 
-@media screen and (max-width: 1150px) {
-    .navbar {
-        padding: 50px;
-    }
+
+/* @media screen and (max-width: 1150px) {
     .div-center h1 {
         font-size: 32px;
     }
@@ -552,28 +575,15 @@ footer .gallery .grid .col-1 .guil2 {
     .div-center .fleche {
         width: 56px;
     }
-    .col-3 p {
-        font-size: 13px;
-    }
 }
 
 @media screen and (max-width:990px) {
-    .navbar {
-        padding: 40px;
+    aside {
+        right: 73px;
+        height: auto;
     }
-    .div-center {
-        top: 8em;
-    }
-    .div-center p {
-        font-size: 14px;
-    }
-    .bouttons a {
-        padding: 10px;
-        font-size: 12px;
-    }
-    .div-center .fleche {
-        top: 4.5em;
-        width: 45px;
+    .img-batman {
+        left: 152px;
     }
     aside a img {
         width: 4em;
@@ -600,26 +610,6 @@ footer .gallery .grid .col-1 .guil2 {
 }
 
 @media screen and (max-width:860px) {
-    .navbar {
-        padding: 30px;
-    }
-    .navbar a img {
-        width: 70px;
-    }
-    .nav-link .a-home {
-        color: white;
-        font-size: 18px;
-    }
-    .div-center h1 {
-        font-size: 24px;
-    }
-    .bouttons a {
-        padding: 9px;
-        font-size: 10px;
-    }
-    .bloc h1 strong {
-        font-size: 20px;
-    }
     .nemesis {
         width: 110px;
     }
@@ -631,56 +621,17 @@ footer .gallery .grid .col-1 .guil2 {
         font-size: 12px;
     }
 }
+*/
 
 @media screen and (max-width:756px) {
-    .container {
-        height: 40em;
+    aside {
+        right: 53px;
+        height: auto;
     }
-    .navbar {
-        padding: 20px;
-    }
-    .div-center p {
-        font-size: 11px;
-    }
-    .div-center {
-        width: 45%;
-    }
-    .div-center h1 {
-        font-size: 20px;
-    }
-    .bloc p {
-        font-size: 11px;
-    }
-    main {
-        left: 85px;
-        right: 85px;
-    }
-    .justice {
-        right: 135px;
-    }
-    #formulaire {
-        right: 85px;
-    }
-    #formulaire form {
-        width: 420px;
-    }
-    .choice {
-        margin-left: 50px;
-        margin-right: 50px;
-    }
-    footer .gallery .grid .col-1 img {
-        width: 48px;
-    }
-}
-
-@media screen and (max-width:685px) {
     .bouttons a {
         position: relative;
         top: 35px;
         font-size: 8px;
-    }
-    .img-batman img {
-        width: 12em;
     }
     #formulaire form {
         width: 350px;
@@ -711,42 +662,123 @@ footer .gallery .grid .col-1 .guil2 {
     }
 }
 
-@media screen and (max-width:628px) {
-    .gallery .grid .col-1 a img {
-        width: 22px;
+@media screen and (max-width:540px) {
+    main {
+        height: 255em;
     }
-    .bloc p {
-        font-size: 10px;
+    .navbar {
+        padding: 8px;
     }
-    .desc {
-        font-size: 7px;
+    .navbar a img {
+        width: 70px;
     }
-    .div-center {
-        width: 55%;
+    .nav-link .a-home {
+        width: 20px;
     }
     .div-center p {
-        font-size: 10px;
+        font-size: 12px;
     }
     .div-center h1 {
+        font-size: 20px;
+    }
+    .div-center .fleche {
+        top: 6em;
+        width: 30px;
+    }
+    .container {
+        height: 26em;
+    }
+    .bloc h1 strong {
         font-size: 18px;
     }
-}
-
-@media screen and (max-width:595px) {
+    .nemesis {
+        width: 100px;
+    }
+    .desc {
+        font-size: 14px;
+    }
+    .justice {
+        right: 61px;
+    }
+    #formulaire {
+        right: 52px;
+    }
+    main {
+        left: 50px;
+        right: 50px;
+    }
+    .div-center {
+        width: 75%;
+        top: 5em;
+    }
+    .bloc {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
     .bloc p {
         font-size: 9px;
     }
     aside {
-        right: 66px;
+        right: 28px;
     }
     .bouttons a {
         font-size: 7px;
     }
+    #formulaire form p {
+        font-size: 12px;
+    }
+    #formulaire form .f-control {
+        font-size: 10px;
+        color: white;
+        border-bottom: 0.1px solid #5a5353;
+    }
+    #formulaire form label {
+        font-size: 10px;
+    }
+    #formulaire form {
+        width: 16em;
+    }
+    form span {
+        font-size: 10px;
+    }
+    input[type='checkbox'] {
+        width: 10px;
+    }
+    input[type="radio"].choix+label {
+        border: 1px solid #1d638b;
+    }
+    .choice {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .btn {
+        padding: 6px;
+        font-size: 10px;
+    }
+    aside a img {
+        width: 3em;
+    }
+    .reseaux-socio a img {
+        width: 1.5em;
+    }
+    .img-batman {
+        left: 62px;
+    }
+    .img-batman img {
+        width: 10em;
+    }
+    .grid-ft {
+        top: 10px;
+    }
 }
 
-@media screen and (max-width:280px) {
+@media screen and (max-width:414px) {
     main {
-        height: 416vh;
+        left: 20px;
+        right: 20px;
+        border: 1px solid #BCBBBD;
+        border-bottom: none;
+        border-top: none;
     }
     .navbar {
         padding: 8px;
@@ -759,33 +791,30 @@ footer .gallery .grid .col-1 .guil2 {
         font-size: 10px;
     }
     #header {
-        height: 28vh;
-        width: 100vw;
+        height: 40vh;
+        width: auto;
     }
     .div-center {
         top: 2.5em;
-        width: 50%;
+        width: 65%;
     }
     .div-center p {
-        font-size: 6px;
-    }
-    .div-center h1 {
         font-size: 8px;
     }
-    .bouttons {
-        padding: 6px;
-        font-size: 3px;
+    .div-center h1 {
+        font-size: 10px;
     }
     .bouttons a {
+        top: 0;
         padding: 4px;
     }
     .div-center .fleche {
-        position: static;
+        position: relative;
+        top: 2em;
         width: 16px;
     }
     aside {
-        right: 4px;
-        top: 65px;
+        right: 6px;
     }
     aside a img {
         width: 2em;
@@ -801,28 +830,31 @@ footer .gallery .grid .col-1 .guil2 {
         margin-right: 15px;
     }
     .bloc h1 strong {
-        font-size: 8px;
+        font-size: 10px;
     }
     .bloc p {
-        margin: 3px;
-        font-size: 5px;
+        font-size: 8px;
     }
     .desc {
-        font-size: 3px;
+        font-size: 6px;
     }
     .gallery {
-        height: 125px;
-        grid-gap: 16px;
+        grid-gap: 12px;
     }
     .nemesis {
         width: 28px;
     }
     .img-batman {
-        width: 100vw;
-        right: 2em;
+        width: 52vw;
+        left: 7.5em;
+        height: auto;
     }
     .img-batman img {
         width: 8em;
+    }
+    .justice {
+        width: 135vw;
+        right: 152px;
     }
     .justice img {
         position: relative;
@@ -836,52 +868,35 @@ footer .gallery .grid .col-1 .guil2 {
     .fleche-g-d {
         width: 14px;
     }
-    .grid {
-        width: 100%;
-    }
-    .grid .col-1 {
-        height: 125px;
-    }
-    .grid .col-3 {
-        width: 70%;
-        height: 125px;
-    }
-    .grid .col-2 {
-        width: 30%;
-        height: 125px;
-        background-color: rgb(0, 0, 0);
+    .grid .col-4 .box .col-3 h4 {
+        font-size: 5px;
     }
     #formulaire {
-        width: 118%;
+        width: 114%;
         right: 19px;
     }
     #formulaire form p {
-        font-size: 8px;
+        font-size: 10px;
     }
     #formulaire form .f-control {
-        font-size: 6px;
+        font-size: 8px;
         color: white;
         border-bottom: 0.1px solid #5a5353;
     }
     #formulaire form label {
-        font-size: 5px;
+        font-size: 8px;
     }
     #formulaire form {
-        width: 10em;
+        width: 14em;
     }
     form span {
-        font-size: 4px;
+        font-size: 8px;
     }
     input[type='checkbox'] {
-        width: 6px;
+        width: 8px;
     }
-    .choice span {
-        padding: 8px;
-        border: 1px solid #295974;
-    }
-    .choice {
-        margin-left: 0;
-        margin-right: 0;
+    input[type="radio"].choix+label {
+        border: 1px solid #1d638b;
     }
     .btn {
         padding: 4px;
@@ -903,19 +918,31 @@ footer .gallery .grid .col-1 .guil2 {
         height: auto;
     }
     footer .gallery .grid .col-1 .guil2 {
-        top: 100px;
+        top: 40px;
     }
     .col-4 .ft {
         font-size: 4px;
     }
     .grid-ft img {
-        top: 38px;
+        top: 60px;
         width: 6px;
         justify-content: space-between;
         position: relative;
     }
     .wb {
-        width: 7px;
+        width: 14px;
+    }
+    .pop {
+        width: 65%;
+        height: 25em;
+    }
+    #popup1 {
+        top: 60px;
+        display: flex;
+        align-items: center;
+    }
+    footer .gallery .grid .col-4 p {
+        font-size: 6px;
     }
 }
 
