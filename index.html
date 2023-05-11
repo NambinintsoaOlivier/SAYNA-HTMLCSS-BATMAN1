@@ -12,48 +12,47 @@
 <body>
     <div id="header">
     </div>
-
     <!-- ---------------------------------------------------MAIN---------------------------------------------------- -->
-
     <main>
         <!-----------------------------------------------------NAVBAR-------------------------------------------------->
-        <nav class="navbar">
-            <a href="index.html"><img src="Assets/Logos/logohome.png" alt=""></a>
-            <div class="nav-link">
-                <ul>
-                    <li><a class="a-home active" href="index.html">HOME</a></li>
-                </ul>
-            </div>
-        </nav>
-        <!---------------------------------------------------END NAVBAR-------------------------------------------------->
-
-        <!-- --------------------------------------------------HEADER----------------------------------------------- -->
         <div class="container">
+            <nav>
+                <div class="navbar">
+                    <a href="index.html"><img src="Assets/Logos/logohome.png" alt=""></a>
+                    <div class="nav-link">
+                        <ul>
+                            <li><a class="a-home active" href="index.html">HOME</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- --------------------------------------------------HEADER----------------------------------------------- -->
             <div class="div-center">
                 <p>Au nom de ses parents assassinés, Bruce Wayne mène une guerre éternelle contre les criminels de Gotham City. Il est vengeur. Il est la nuit.</p><br>
                 <h1>Il est Batman</h1><br>
                 <div class="bouttons">
                     <a href="#cinema">VOIR LES HÉROS</a>
                     <a href="#nemesis">LES ADVERSAIRES</a>
+                </div><br>
+                <div class="fleche">
+                    <a href="#footer"><img src="Assets/Logos/flèche_down_header.png" alt=""></a>
                 </div>
-                <a href="#footer"><img class="fleche" src="Assets/Logos/flèche_down_header.png" alt=""></a>
             </div>
+
+            <!-- ---------------------------------------------------ASIDE------------------------------------------------ -->
+
+            <aside>
+                <a href="#header"><img src="Assets/Logos/logo_bat_flèche.png" alt=""></a><br><br>
+                <div class="reseaux-socio">
+                    <a href=""><img src="Assets/Logos/icon_facebook.png" alt=""></a><br><br>
+                    <a href=""><img src="Assets/Logos/icon_ig.png" alt=""></a><br><br>
+                    <a href=""><img src="Assets/Logos/icon_tw.png" alt=""></a><br><br>
+                </div>
+                <a href="#formulaire"><img src="Assets/Logos/logo_bat_flèche_2.png" alt=""></a>
+            </aside>
         </div>
-
-        <!-- ------------------------------------------------END HEADER----------------------------------------------- -->
-
-        <!-- ---------------------------------------------------ASIDE------------------------------------------------ -->
-        <aside>
-            <a href="#header"><img src="Assets/Logos/logo_bat_flèche.png" alt=""></a><br><br>
-            <div class="reseaux-socio">
-                <a href=""><img src="Assets/Logos/icon_facebook.png" alt=""></a><br><br>
-                <a href=""><img src="Assets/Logos/icon_ig.png" alt=""></a><br><br>
-                <a href=""><img src="Assets/Logos/icon_tw.png" alt=""></a><br><br>
-            </div>
-            <a href="#formulaire"><img src="Assets/Logos/logo_bat_flèche_2.png" alt=""></a>
-        </aside>
-        <!-- -------------------------------------------------END ASIDE------------------------------------------------ -->
-
+        <!-- ---------------------------------CONTENU DU SITE-------------------------------------- -->
         <!-- BATMAN AU CINÉMA -->
         <div class="ani">
             <section id="cinema" class="bloc">
@@ -134,7 +133,6 @@
                 </div>
             </section>
         </div><br><br>
-
         <!-- JUSTICE LEAGUE -->
         <div class="ani">
             <section class="bloc">
@@ -182,7 +180,9 @@
                     </div>
                 </div><br><br><br>
                 <div class="video">
-                    <img src="Assets/Illustrations/Bathome_ba2.png" alt="">
+                    <video controls>
+                        <source src="Assets/Batman - The Dark Knight Rises - Bande Annonce Officielle (VF) - Christian Bale _ Christopher Nolan.mp4" type="video/mp4">
+                        </video>
                 </div><br>
             </section><br>
         </div>
@@ -196,9 +196,11 @@
                 <input type="checkbox"><br>
                 <select class="f-control">
                     <option value="" disabled selected hidden>Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</option>
-                    <option value="">Par Jours</option>
-                    <option value="">Par Semaine</option>
-                    <option value="">Par Jours</option>
+                    <option value="">Une fois par semaine</option>
+                    <option value="">Une fois toutes les deux semaines (2 fois par mois)</option>
+                    <option value="">Une fois par mois</option>
+                    <option value="">Une fois toutes les trois mois</option>
+                    <option value="">Une fois toutes les six mois</option>
                 </select><br><br>
                 <label for="">MESSAGE</label><br><br>
                 <input class="f-control" placeholder="Souhaitez vous recevoir des news " type="text"><br><br>
@@ -232,34 +234,43 @@
 
         <!-- -------------------------------------------FOOTER----------------------------------------------- -->
         <footer id="footer">
-            <div class="gallery">
-                <div class="grid">
-                    <div class="col-1 ">
-                        <a href=""><img src="Assets/Logos/icon_guillemets_1.png" alt=""></a>
-                    </div>
-                    <div class="col-4">
-                        <p>La seule façon raisonnable de vivre en ce bas monde,<br> c'est en dehors des règles. <br><br> The Dark Knight : Le Chevalier Noir - <br> Le Joker à Batman (2008)</p>
-                    </div>
-
-                    <div class="col-1">
-                        <a href=""><img class="guil2" src="Assets/Logos/icon_guillemets_2.png" alt=""></a>
-                    </div>
-                </div>
-                <div class="grid">
-                    <div class="col-4">
-                        <img class="wb" src="Assets/Logos/icon_WB.png" alt="">
-                        <p class="ft">Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves</p>
-                    </div>
-                </div>
-                <div class="grid-ft">
-                    <a href=""><img src="Assets/Logos/logo_sayna_white.png" alt=""></a>
-                    <a href=""><img src="Assets/Logos/icon_x.png" alt=""></a>
-                    <a href=""><img src="Assets/Logos/icon_DC.png" alt=""></a>
-                    <a href=""><img src="Assets/Logos/icon_facebook.png" alt=""></a>
-                    <a href=""><img src="Assets/Logos/icon_ig.png" alt=""></a>
-                    <a href=""><img src="Assets/Logos/icon_tw.png" alt=""></a>
-                </div>
+            <div class="col-1 ">
+                <a href=""><img src="Assets/Logos/icon_guillemets_1.png" alt=""></a>
             </div>
+            <div class="col-4">
+                <div class="col-4-1">
+                    <p> La seule façon raisonnable de vivre en ce bas monde,<br> c'est en dehors des règles. <br><br> The Dark Knight : Le Chevalier Noir -
+                        <br> Le Joker à Batman (2008) <br>
+                    </p><br>
+                </div>
+                <div class="col-4-2">
+                    <label for="" class="ronde"></label>
+                    <label for="" class="ronde"></label>
+                    <label for="" class="ronde"></label>
+                    <label for="" class="ronde"></label>
+                    <label for="" class="ronde color"></label>
+                    <label for="" class="ronde"></label>
+                    <label for="" class="ronde"></label>
+                    <label for="" class="ronde"></label>
+                    <label for="" class="ronde"></label></div>
+
+            </div>
+            <div class="col-1-r">
+                <a href=""><img src="Assets/Logos/icon_guillemets_2.png" alt=""></a>
+            </div>
+        </footer>
+        <footer>
+            <img class="wb" src="Assets/Logos/icon_WB.png" alt="">
+            <p class="ft">Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves</p>
+
+        </footer>
+        <footer class="reseaux-socio-foot">
+            <a href=""><img src="Assets/Logos/logo_sayna_white.png" alt=""></a>
+            <a href=""><img src="Assets/Logos/icon_x.png" alt=""></a>
+            <a href=""><img src="Assets/Logos/icon_DC.png" alt=""></a>
+            <a href=""><img src="Assets/Logos/icon_facebook.png" alt=""></a>
+            <a href=""><img src="Assets/Logos/icon_ig.png" alt=""></a>
+            <a href=""><img src="Assets/Logos/icon_tw.png" alt=""></a>
         </footer>
     </main>
 
@@ -280,6 +291,5 @@
 
 
 
-    </main>
     <!-- -------------------------------------------------END FOOTER----------------------------------------------- -->
 </body>

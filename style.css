@@ -5,14 +5,18 @@
     list-style: none;
 }
 
+@font-face {
+    font-family: 'rajdhani';
+    src: url(rajdhani/Rajdhani-Bold.ttf,), url(rajdhani/Rajdhani-Light.ttf), url(rajdhani/Rajdhani-Medium.ttf), url(rajdhani/Rajdhani-Regular.ttf), url(rajdhani/Rajdhani-SemiBold.ttf);
+}
+
 html {
-    background-color: rgb(0, 0, 0);
+    background-color: black!important;
 }
 
 body {
-    font-family: "Corbel Light";
     color: white;
-    background-color: black;
+    font-family: rajdhani;
     overflow-x: hidden;
 }
 
@@ -33,15 +37,35 @@ body {
 }
 
 
-/* -------------------------------------------NAVBAR---------------------------------------------------------- */
+/* ----------------------------BACKGROUND HEADER----------------------------------- */
+
+#header {
+    background-image: url(Assets/Illustrations/Bathome1.png);
+    height: 900px;
+    background-color: black;
+    max-height: 122vh;
+    width: auto;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center top;
+}
+
+
+/* -----------------------------NAVBAR-------------------------------------------- */
+
+nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    border-bottom: 3px solid #BCBBBD;
+}
 
 .navbar {
-    padding: 60px;
+    margin-left: 80px;
+    margin-right: 80px;
+    padding: 40px;
     display: flex;
     justify-content: space-between;
-    border-bottom: 3px solid #BCBBBD;
-    font-weight: bold;
-    letter-spacing: 2px;
 }
 
 .navbar a img:hover {
@@ -55,59 +79,75 @@ body {
 
 .a-home:hover {
     text-decoration: underline;
-}
-
-.active {
-    text-decoration: underline;
+    font-weight: bold;
 }
 
 
-/* ---------------------------------------------------END NAVBAR------------------------------------------------- */
-
-
-/* -------------------------------------------------HEADER-------------------------------------------------------- */
+/* ------------------------BORDER MAIN--------------------------------------- */
 
 main {
     position: absolute;
     top: 0;
     left: 102px;
     right: 102px;
-    height: auto;
-    box-sizing: border-box;
-    border: 2.5px solid #BCBBBD;
+    border: 2.5px solid #838383;
     border-bottom: none;
     border-top: none;
 }
 
+.container,
+.fleche,
+.gallery,
+.video,
+footer,
+footer .col-4-1,
+footer .col-4-2,
+footer .col-1,
+footer .col-1-r,
+.popup,
+.pop,
+.confirmation {
+    display: flex;
+    justify-content: center;
+}
+
+.div-center,
+.reseaux-socio,
+.gallery,
+#formulaire form p,
+.popup,
+footer .col-4-1 {
+    text-align: center;
+}
+
+
+/* -------------------------TEXT HEADER------------------------------------------ */
+
 .container {
     width: 100%;
-    height: 45em;
-    text-align: center;
+    height: 800px;
+    align-items: end;
 }
 
 .div-center {
-    position: relative;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
-    height: auto;
-    width: 52%;
-    top: 10em;
+    width: 42%;
+    min-width: 300px;
+}
+
+.div-center p {
+    font-size: 15px;
+    letter-spacing: 2px;
 }
 
 .bouttons {
-    position: relative;
     display: flex;
     justify-content: space-evenly;
 }
 
 .bouttons a {
     color: rgb(255, 255, 255);
-    font-size: 20px;
-    margin: 1em;
-    padding: 10px;
+    padding: 25px;
     font-family: "Arial Narrow";
-    letter-spacing: 2px;
     opacity: 50%;
     background-image: linear-gradient(to right, #d3aea8 5%, #5b0005 95%);
 }
@@ -116,36 +156,13 @@ main {
     opacity: 100%;
 }
 
-.div-center .fleche {
-    position: relative;
-    top: 16em;
-}
-
-.div-center .fleche:hover {
-    width: 78px;
-    cursor: pointer;
-}
-
-.div-center p {
-    font-size: 19px;
-    letter-spacing: 2px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-#header {
-    height: 300vh;
-    width: 100vw;
-    background-image: url(Assets/Illustrations/Bathome1.png);
-    background-position: center top;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
+.fleche {
+    height: 40vh;
+    align-items: end;
 }
 
 
-/* ------------------------------------------------END HEADER------------------------------------------ */
-
-
-/* ----------------------------------------------------ASIDE--------------------------------------------- */
+/* ----------------------------ASIDE FIXE-------------------------------------------------- */
 
 aside {
     position: fixed;
@@ -154,23 +171,16 @@ aside {
     z-index: 1;
 }
 
-.reseaux-socio {
-    text-align: center;
-}
-
 aside a img:hover {
     filter: invert(33%) sepia(100%) saturate(8);
 }
 
 
-/* ----------------------------------------------END ASIDE--------------------------------------------- */
-
-
-/* ------------------------------------------------MAIN------------------------------------------------- */
+/* -----------------------------CONTENU DU SITE---------------------------------------- */
 
 .bloc {
-    /* top: 10%; */
     margin-left: 50px;
+    margin-top: 20px;
     margin-right: 50px;
     height: auto;
 }
@@ -178,22 +188,12 @@ aside a img:hover {
 .bloc p {
     font-size: 20px;
     font-family: inherit;
-    width: 80%;
+    width: 85%;
     text-align: justify;
 }
 
-.bloc h1 strong {
-    font-size: 32px;
-    /* en arrivant sur la page */
-    visibility: hidden;
-    visibility: visible;
-}
-
 .gallery {
-    display: flex;
-    /* text-align: center; */
     grid-gap: 50px;
-    flex-wrap: wrap;
 }
 
 .gallery-items img {
@@ -206,166 +206,118 @@ aside a img:hover {
     width: 100%;
 }
 
-.desc {
-    font-size: 18px;
-    font-family: revert;
-    letter-spacing: 0.5px;
-    padding: 15px;
-    text-align: center;
-}
-
 .nemesis {
-    width: 150px;
+    width: 10vw;
 }
 
 .img-batman {
-    width: auto;
-    left: 155px;
-    height: auto;
-    position: relative;
+    width: 100%;
+    margin-left: 152px;
     display: flex;
+    justify-content: end;
 }
 
 .img-batman img {
-    width: 20em;
-    margin-left: auto;
-}
-
-.img-batman h1 strong {
-    position: relative;
-    top: 6.6em;
-    left: 6.5em;
+    width: 30vw;
 }
 
 .justice {
-    width: 100%;
-    right: 152px;
+    width: 98.6vw;
     height: auto;
-    position: relative;
+    margin-left: -152px;
 }
 
 .justice img {
-    height: auto;
-    width: 100vw;
+    width: 100%;
 }
 
 .grid {
-    position: static;
-    width: 80%;
-    height: auto;
-    margin: 30px auto;
     display: flex;
+    align-items: center;
+    width: 90%;
+    min-width: 650px;
+    max-height: 300px;
+    margin: 30px auto;
 }
 
 .grid .col-1 {
-    display: flex;
-    width: 20%;
-    height: auto;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
-
-.grid .col-2 {
-    display: flex;
     width: 30%;
     height: auto;
-    background-color: rgb(0, 0, 0);
 }
 
-.grid .col-2 img {
-    position: static;
+.grid .col-4 {
+    width: 100%;
+}
+
+.box {
+    border: 2px rgb(81, 120, 128);
+    border-radius: 8px;
     display: flex;
+    background-color: rgb(81, 120, 128);
+}
+
+.box .col-2 {
+    width: 30%;
+    height: auto;
+}
+
+.box .col-2 img {
+    width: 100%;
+    height: 100%;
+}
+
+.box .col-3 {
+    text-align: left;
+    width: 70%;
+    margin: 5px;
+    height: auto;
+}
+
+.box .col-3 div p {
+    font-size: 18px;
+    width: 90%;
+}
+
+.video {
+    background-color: aqua;
     width: 100%;
     height: auto;
 }
 
-.grid .col-3 {
-    width: 70%;
+video {
+    width: 100%;
     height: auto;
 }
 
-.col-3 div {
-    padding: 12px;
-    height: auto;
-}
 
-.col-3 p {
-    width: 90%;
-    font-size: 15px;
-}
-
-.col-3 p span {
-    color: yellow;
-    font-weight: bold;
-}
-
-.grid .col-4 {
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
-    height: auto;
-}
-
-.box {
-    display: flex;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    border: 2px solid rgb(81, 120, 128);
-    border-radius: 8px;
-}
-
-.video {
-    position: static;
-    display: flex;
-    justify-content: center;
-}
-
-.video img:hover {
-    cursor: pointer;
-}
-
-.video img {
-    width: 60%;
-    height: auto;
-}
-
-.grid-ft a:hover {
-    filter: invert(33%) sepia(100%) saturate(8);
-}
-
-
-/* -----------------------------------------------FORMULAIRE--------------------------------------- */
+/* ---------------------------------------------FORMULAIRE------------------------------------ */
 
 #formulaire {
-    width: 100vw;
-    right: 102px;
+    background-image: linear-gradient(to right, #48453d 10%, #0f222c 90%);
+    width: 98.6vw;
     height: auto;
-    position: relative;
+    margin-left: -102px;
     display: flex;
     justify-content: center;
-    background-image: linear-gradient(to right, #48453d 10%, #0f222c 90%);
 }
 
-#formulaire form {
-    width: 600px;
+form {
     height: auto;
+    min-width: 550px;
+    width: 50%;
 }
 
 #formulaire form p {
-    text-align: center;
     font-size: 30px;
-    font-weight: bold;
 }
 
 #formulaire form label {
     font-size: 20px;
+    margin-top: 30px;
 }
 
 #formulaire form .f-control {
-    padding: 0px;
+    margin-top: 30px;
     font-size: 20px;
     width: 100%;
     background-color: transparent;
@@ -380,22 +332,18 @@ aside a img:hover {
     background-color: #0f222c;
 }
 
-.confirmation {
-    display: flex;
-    justify-content: center;
-}
-
 .btn {
-    color: #d3d2d2;
-    font-family: unset;
     font-size: 30px;
     padding: 8px;
-    background-image: linear-gradient(to right, #787773 10%, #5b0f17 90%);
     transition: all 0.3s ease-out;
+    color: rgb(255, 255, 255);
+    font-family: "Arial Narrow";
+    opacity: 50%;
+    background-image: linear-gradient(to right, #d3aea8 5%, #5b0005 95%);
 }
 
 .btn:hover {
-    background-image: linear-gradient(to right, rgba(187, 0, 0, 0.2) 10%, rgb(0, 0, 0) 90%);
+    opacity: 100%;
 }
 
 .choice {
@@ -411,25 +359,25 @@ input[type="radio"].choix {
 
 input[type="radio"].choix+label:hover {
     cursor: pointer;
-    background-color: #00a2ff;
+    background-color: #a7bfcc;
 }
 
 input[type="radio"].choix+label {
     padding: 6px;
     background-color: transparent;
-    border: 2px solid #00a2ff;
+    border: 2px solid #a7bfcc;
     line-height: 1.5;
-    border-radius: 0.3rem;
     color: #fff;
     transition: all 0.5s ease-in-out;
 }
 
 input[type="radio"].choix:checked+label {
-    background-color: #00a2ff;
+    background-color: #a7bfcc;
+    color: #0f222c;
 }
 
 
-/* POPUP */
+/* --------------------------------POPUP------------------------------ */
 
 .pop {
     position: fixed;
@@ -446,9 +394,6 @@ input[type="radio"].choix:checked+label {
 .popup {
     width: 600px;
     height: 500px;
-    display: flex;
-    text-align: center;
-    justify-content: center;
     border-radius: 25px;
     align-items: center;
     transition: all 5s ease-in-out;
@@ -478,8 +423,6 @@ input[type="radio"].choix:checked+label {
     margin: 30px auto;
     width: 50%;
     height: 500px;
-    display: flex;
-    justify-content: center;
     z-index: 1;
 }
 
@@ -488,301 +431,266 @@ input[type="radio"].choix:checked+label {
 }
 
 
-/* ---------------------------------------------------FOOTER-------------------------------------------------- */
+/* ------------------------------------------FOOTER------------------------------- */
 
-.gallery-items-foot {
-    position: static;
+footer {
+    margin-top: 80px;
     width: 100%;
-    height: 200px;
-}
-
-footer .gallery .grid .col-4 {
-    display: flex;
-    text-align: center;
-    justify-content: center;
+    height: 300px;
+    grid-gap: 10px;
     align-items: center;
 }
 
-footer .gallery .grid .col-1 img {
-    position: static;
-    width: 65px;
+footer .col-1,
+footer .col-1-r {
+    width: 20%;
+    height: 100%;
 }
 
-.col-4 .ft {
-    font-size: 12px;
-}
-
-.grid-ft {
-    width: 25%;
-    position: relative;
-    height: auto;
-    margin: 20px auto;
-    display: flex;
-    text-align: center;
-    justify-content: space-evenly;
-    top: -100px;
-}
-
-.grid-ft img {
-    width: 30px;
-    justify-content: space-between;
-}
-
-footer .gallery .grid .col-1 {
-    display: flex;
-    position: relative;
+footer .col-1 {
+    padding: 10px;
     align-items: baseline;
 }
 
-footer .gallery .grid .col-1 .guil2 {
-    position: relative;
-    top: 180px;
+footer .col-1-r {
+    align-items: end;
+}
+
+footer .col-4 {
+    display: block;
+    width: 60%;
+    height: 100%;
+}
+
+footer .col-4-1 {
+    width: 100%;
+    height: 60%;
+    align-items: end;
+}
+
+footer .col-4-2 {
+    grid-gap: 8px;
+    height: 40%;
+}
+
+.ronde {
+    justify-content: space-evenly;
+    width: 5px;
+    height: 5px;
+    border: 1.5px solid rgb(46, 102, 148);
+    border-radius: 30px;
+}
+
+.color {
+    background-color: rgb(46, 102, 148);
+}
+
+.ft {
+    font-size: 10px;
+}
+
+.reseaux-socio img:hover {
+    filter: invert(33%) sepia(100%) saturate(8);
 }
 
 
-/* -----------------------------------------------RESPONSIVE----------------------------------------------- */
+/* ---------------------------------RESPONSIVE---------------------------------- */
 
-@media screen and (max-width: 1319px) {
-    .gallery {
-        grid-gap: 10px;
-    }
-    .gallery-items {
-        width: 30%;
-    }
-    .gallery-items img {
-        width: 90%;
-    }
-    .desc {
-        font-size: 16px;
-    }
-    .grid {
-        width: 100%;
-    }
-}
-
-
-/* @media screen and (max-width: 1150px) {
-    .div-center h1 {
-        font-size: 32px;
-    }
-    .div-center p {
-        font-size: 16px;
-    }
-    .bouttons a {
-        padding: 12px;
-        font-size: 15px;
-    }
-    .div-center .fleche {
-        width: 56px;
-    }
-}
-
-@media screen and (max-width:990px) {
-    aside {
-        right: 73px;
-        height: auto;
-    }
-    .img-batman {
-        left: 152px;
-    }
-    aside a img {
-        width: 4em;
-    }
-    .reseaux-socio a img {
-        width: 1.2em;
-    }
-    #formulaire form {
-        width: 500px;
-        height: auto;
-    }
-    #formulaire form p {
-        font-size: 24px;
-    }
-    #formulaire form label {
-        font-size: 18px;
-    }
-    #formulaire form .f-control {
-        font-size: 18px;
-    }
-    .btn {
-        font-size: 22px;
-    }
-}
-
-@media screen and (max-width:860px) {
-    .nemesis {
-        width: 110px;
-    }
-    .grid-ft img {
-        width: 20px;
-        justify-content: space-between;
-    }
-    .bloc p {
-        font-size: 12px;
-    }
-}
-*/
-
-@media screen and (max-width:756px) {
-    aside {
-        right: 53px;
-        height: auto;
-    }
-    .bouttons a {
-        position: relative;
-        top: 35px;
-        font-size: 8px;
-    }
-    #formulaire form {
-        width: 350px;
-    }
-    #formulaire form p {
-        font-size: 18px;
-    }
-    #formulaire form label {
-        font-size: 12px;
-    }
-    #formulaire form .f-control {
-        font-size: 14px;
-    }
-    form span {
-        font-size: 12px;
-    }
-    .btn {
-        font-size: 15px;
-    }
-    .pop {
-        width: 80%;
-    }
-    footer .gallery .grid .col-4 p {
-        font-size: 10px;
-    }
-    .grid-ft img {
-        width: 16px;
-    }
-}
-
-@media screen and (max-width:540px) {
-    main {
-        height: 255em;
-    }
-    .navbar {
-        padding: 8px;
-    }
-    .navbar a img {
-        width: 70px;
-    }
-    .nav-link .a-home {
-        width: 20px;
-    }
-    .div-center p {
-        font-size: 12px;
-    }
-    .div-center h1 {
-        font-size: 20px;
-    }
-    .div-center .fleche {
-        top: 6em;
-        width: 30px;
+@media all and (max-width:1075px) {
+    .fleche {
+        height: 240px;
+        align-items: center;
     }
     .container {
-        height: 26em;
+        height: 680px;
+    }
+}
+
+@media all and (max-width:920px) {
+    .navbar {
+        margin-left: 45px;
+        margin-right: 45px;
+    }
+    .bouttons a {
+        padding: 14px;
+    }
+    .bloc p {
+        font-size: 16px;
+    }
+    .desc {
+        font-size: 12px;
+    }
+    .box .col-3 div p,
+    .box .col-3 h4 {
+        font-size: 13px;
+    }
+    .grid {
+        width: 69%;
+        min-width: 450px;
+    }
+    form {
+        min-width: 350px;
+    }
+    #formulaire form p {
+        font-size: 20px;
+    }
+    #formulaire form label,
+    #formulaire form .f-control,
+    #formulaire form span {
+        font-size: 15px;
+    }
+    .choice {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    .btn {
+        font-size: 20px;
+    }
+    .col-4-1 p {
+        font-size: 10px;
+    }
+    footer .col-4-2 {
+        grid-gap: 2px;
+    }
+    .col-1 img,
+    .col-1-r img {
+        width: 70%;
+    }
+    .ft {
+        font-size: 8px;
+    }
+}
+
+@media all and (max-width:700px) {
+    main {
+        left: 80px;
+        right: 80px;
+    }
+    .justice {
+        width: 102vw;
+        margin-left: -106px;
+    }
+    .navbar {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 18px;
+    }
+    .navbar a img {
+        width: 60px;
+    }
+    .nav-link .a-home {
+        font-size: 18px;
+    }
+    .container {
+        height: 560px;
+    }
+    #formulaire {
+        width: 104vw;
+        margin-left: -78px;
+    }
+    aside {
+        right: 50px;
+        top: 100px;
+    }
+    aside a img {
+        width: 60px;
+    }
+    aside .reseaux-socio a img {
+        width: 20px;
+    }
+    .bloc {
+        margin-left: 25px;
+        margin-right: 25px;
     }
     .bloc h1 strong {
         font-size: 18px;
     }
-    .nemesis {
-        width: 100px;
-    }
-    .desc {
-        font-size: 14px;
-    }
-    .justice {
-        right: 61px;
-    }
-    #formulaire {
-        right: 52px;
-    }
-    main {
-        left: 50px;
-        right: 50px;
-    }
-    .div-center {
-        width: 75%;
-        top: 5em;
-    }
-    .bloc {
-        margin-left: 10px;
-        margin-right: 10px;
+    .grid {
+        min-width: 410px;
     }
     .bloc p {
-        font-size: 9px;
+        font-size: 14px;
     }
-    aside {
-        right: 28px;
+    .box .col-3 div p,
+    .box .col-3 h4 {
+        font-size: 10px;
     }
-    .bouttons a {
-        font-size: 7px;
+    .div-center p {
+        font-size: 12px;
+    }
+    .div-center h1 {
+        font-size: 18px;
+    }
+    .fleche a img {
+        width: 40px;
+    }
+    .reseaux-socio-foot a img {
+        width: 20px;
+    }
+}
+
+@media all and (max-width:550px) {
+    .fleche {
+        height: 140px;
+    }
+    .container {
+        height: 400px;
+    }
+    .justice {
+        width: 103vw;
+        margin-left: -130px;
+    }
+    .grid {
+        min-width: 330px;
+    }
+    .box .col-3 div p,
+    .box .col-3 h4 {
+        font-size: 8px;
+    }
+    #formulaire {
+        width: 103vw;
+        margin-left: -21px;
+    }
+    .img-batman {
+        width: 48vw;
+    }
+    .fleche-g-d {
+        width: 14px;
+    }
+    #formulaire form {
+        width: 14em;
+        min-width: 260px;
+    }
+    .gallery {
+        grid-gap: 25px;
+    }
+    #formulaire {
+        margin-left: -104px;
+    }
+    footer {
+        height: 168px;
+    }
+    .ft {
+        font-size: 5px;
     }
     #formulaire form p {
         font-size: 12px;
     }
-    #formulaire form .f-control {
+    #formulaire form label,
+    #formulaire form .f-control,
+    #formulaire form span {
         font-size: 10px;
-        color: white;
-        border-bottom: 0.1px solid #5a5353;
-    }
-    #formulaire form label {
-        font-size: 10px;
-    }
-    #formulaire form {
-        width: 16em;
-    }
-    form span {
-        font-size: 10px;
-    }
-    input[type='checkbox'] {
-        width: 10px;
-    }
-    input[type="radio"].choix+label {
-        border: 1px solid #1d638b;
-    }
-    .choice {
-        margin-left: 0;
-        margin-right: 0;
-    }
-    .btn {
-        padding: 6px;
-        font-size: 10px;
-    }
-    aside a img {
-        width: 3em;
-    }
-    .reseaux-socio a img {
-        width: 1.5em;
-    }
-    .img-batman {
-        left: 62px;
-    }
-    .img-batman img {
-        width: 10em;
-    }
-    .grid-ft {
-        top: 10px;
     }
 }
 
-@media screen and (max-width:414px) {
+@media all and (max-width:414px) {
     main {
         left: 20px;
         right: 20px;
         border: 1px solid #BCBBBD;
-        border-bottom: none;
-        border-top: none;
     }
     .navbar {
         padding: 8px;
-        border-bottom: 2px solid rgba(141, 92, 83, 0.4);
     }
     .navbar a img {
         width: 2em;
@@ -790,13 +698,11 @@ footer .gallery .grid .col-1 .guil2 {
     .nav-link .a-home {
         font-size: 10px;
     }
-    #header {
-        height: 40vh;
-        width: auto;
+    .container {
+        height: 340px;
     }
-    .div-center {
-        top: 2.5em;
-        width: 65%;
+    aside {
+        right: -10px;
     }
     .div-center p {
         font-size: 8px;
@@ -805,25 +711,10 @@ footer .gallery .grid .col-1 .guil2 {
         font-size: 10px;
     }
     .bouttons a {
-        top: 0;
         padding: 4px;
     }
-    .div-center .fleche {
-        position: relative;
-        top: 2em;
-        width: 16px;
-    }
-    aside {
-        right: 6px;
-    }
-    aside a img {
-        width: 2em;
-    }
-    .reseaux-socio a img {
-        width: 0.5em;
-    }
-    .container {
-        height: 14em;
+    .fleche {
+        height: 15vh;
     }
     .bloc {
         margin-left: 15px;
@@ -841,108 +732,72 @@ footer .gallery .grid .col-1 .guil2 {
     .gallery {
         grid-gap: 12px;
     }
-    .nemesis {
-        width: 28px;
-    }
     .img-batman {
         width: 52vw;
-        left: 7.5em;
-        height: auto;
-    }
-    .img-batman img {
-        width: 8em;
     }
     .justice {
-        width: 135vw;
-        right: 152px;
+        width: 103vw;
+        margin-left: -36px;
     }
-    .justice img {
-        position: relative;
-        margin-right: auto;
-        margin-left: auto;
-        height: auto;
-        width: 100vw;
-        display: flex;
-        left: 55px;
+    .col-1 img,
+    .col-1-r img {
+        width: 40%;
+    }
+    .grid {
+        min-width: 330px;
+    }
+    .box .col-3 div p,
+    .box .col-3 h4 {
+        font-size: 8px;
     }
     .fleche-g-d {
         width: 14px;
     }
-    .grid .col-4 .box .col-3 h4 {
-        font-size: 5px;
-    }
     #formulaire {
-        width: 114%;
-        right: 19px;
+        width: 103vw;
+        margin-left: -21px;
     }
-    #formulaire form p {
-        font-size: 10px;
-    }
-    #formulaire form .f-control {
+    .col-4-1 p {
         font-size: 8px;
-        color: white;
-        border-bottom: 0.1px solid #5a5353;
-    }
-    #formulaire form label {
-        font-size: 8px;
-    }
-    #formulaire form {
-        width: 14em;
-    }
-    form span {
-        font-size: 8px;
-    }
-    input[type='checkbox'] {
-        width: 8px;
-    }
-    input[type="radio"].choix+label {
-        border: 1px solid #1d638b;
     }
     .btn {
-        padding: 4px;
-        font-size: 8px;
+        font-size: 12px;
     }
-    footer .gallery .grid .col-1 a img {
-        width: 1em;
+    footer {
+        height: 150px;
     }
-    .col-4 .col-3 p {
-        font-size: 5px;
-    }
-    .col-4 p {
-        font-size: 6px;
-    }
-    footer .gallery {
-        height: auto;
-    }
-    footer .gallery .grid .col-4 {
-        height: auto;
-    }
-    footer .gallery .grid .col-1 .guil2 {
-        top: 40px;
-    }
-    .col-4 .ft {
-        font-size: 4px;
-    }
-    .grid-ft img {
-        top: 60px;
-        width: 6px;
-        justify-content: space-between;
-        position: relative;
+    .ronde {
+        justify-content: space-evenly;
+        width: 4px;
+        height: 4px;
     }
     .wb {
         width: 14px;
     }
-    .pop {
-        width: 65%;
-        height: 25em;
+    .ft {
+        font-size: 4px;
     }
-    #popup1 {
-        top: 60px;
-        display: flex;
-        align-items: center;
+}
+
+@media all and (max-width:340px) {
+    .container {
+        height: 290px;
     }
-    footer .gallery .grid .col-4 p {
-        font-size: 6px;
+    .div-center {
+        min-width: 250px;
+    }
+    .bouttons a {
+        font-size: 10px;
+    }
+    .img-batman {
+        width: 40vw;
+    }
+    .grid {
+        min-width: 250px;
+    }
+    .box .col-3 div p,
+    .box .col-3 h4 {
+        font-size: 5px;
     }
 }
 
