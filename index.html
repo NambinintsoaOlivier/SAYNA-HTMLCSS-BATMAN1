@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Acceuil</title>
+    <title>Home</title>
 </head>
 
 <body>
@@ -14,8 +14,8 @@
     </div>
     <!-- ---------------------------------------------------MAIN---------------------------------------------------- -->
     <main>
-        <!-----------------------------------------------------NAVBAR-------------------------------------------------->
-        <div class="container">
+        <div class="container flex-center">
+            <!-----------------------------------------------------NAVBAR-------------------------------------------------->
             <nav>
                 <div class="navbar">
                     <a href="index.html"><img src="Assets/Logos/logohome.png" alt=""></a>
@@ -29,22 +29,22 @@
 
             <!-- --------------------------------------------------HEADER----------------------------------------------- -->
             <div class="div-center">
-                <p>Au nom de ses parents assassinés, Bruce Wayne mène une guerre éternelle contre les criminels de Gotham City. Il est vengeur. Il est la nuit.</p><br>
+                <p>Au nom de ses parents assassinés, Bruce Wayne mène une guerre éternelle contre les criminels de Gotham City. <br> Il est vengeur. Il est la nuit.</p><br>
+
                 <h1>Il est Batman</h1><br>
                 <div class="bouttons">
-                    <a href="#cinema">VOIR LES HÉROS</a>
-                    <a href="#nemesis">LES ADVERSAIRES</a>
+                    <a class="btn" href="#cinema">VOIR LES HÉROS</a>
+                    <a class="btn" href="#nemesis">LES ADVERSAIRES</a>
                 </div><br>
-                <div class="fleche">
+                <div class="fleche flex-center">
                     <a href="#footer"><img src="Assets/Logos/flèche_down_header.png" alt=""></a>
                 </div>
             </div>
 
             <!-- ---------------------------------------------------ASIDE------------------------------------------------ -->
-
             <aside>
                 <a href="#header"><img src="Assets/Logos/logo_bat_flèche.png" alt=""></a><br><br>
-                <div class="reseaux-socio">
+                <div class="reseaux-socio align-center">
                     <a href=""><img src="Assets/Logos/icon_facebook.png" alt=""></a><br><br>
                     <a href=""><img src="Assets/Logos/icon_ig.png" alt=""></a><br><br>
                     <a href=""><img src="Assets/Logos/icon_tw.png" alt=""></a><br><br>
@@ -52,6 +52,7 @@
                 <a href="#formulaire"><img src="Assets/Logos/logo_bat_flèche_2.png" alt=""></a>
             </aside>
         </div>
+
         <!-- ---------------------------------CONTENU DU SITE-------------------------------------- -->
         <!-- BATMAN AU CINÉMA -->
         <div class="ani">
@@ -62,7 +63,7 @@
                     alors héros majeur de DC, car il n’a aucun pouvoir. Il sera porté au cinema pour la première fois en 1943 par Lewis Wilson et bénéficiera de nombreux reboot, donnant l’occasion à de multiples acteurs d’interpréter l’homme chauve-souris.
                     Voici les trois derniers
                 </p><br><br>
-                <div class="gallery">
+                <div class="gallery flex-center align-center">
                     <div class="gallery-items">
                         <img src="Assets/Illustrations/Bathome2.png" alt="Robert Pattinson">
                         <div class="desc">Robert Pattinson (2022)</div>
@@ -87,7 +88,7 @@
                     Batman souhaite éradiquer la criminalité de Gotham. C’est pourquoi, il affrontera la plupart du temps, des vilains sans capacités surnaturelles mais particulièrement violents ou psychopathes. Avec son introduction dans la Justice League il aura l’occasion
                     de se mesurer à des antagonistes qui défient l’imagination et les lois de la physique. Parmi les derniers ennemis emblématiques que nous avons pu voir au cinéma, on retrouve :
                 </p><br><br>
-                <div class="gallery">
+                <div class="gallery flex-center align-center">
                     <div class="gallery-items">
                         <img src="Assets/Illustrations/Bathome5.png" alt="The Riddler Paul Dano">
                         <div class="desc">The Riddler Paul Dano (2022)</div>
@@ -116,7 +117,7 @@
                     tantôt alliée la jeune femme fatale fera tourner la tête de Batman à maintes reprises. Du côté de la police, Bruce pourra compter sur l’aide infaillible de James Gordon, “Jim , qui désire lui aussi nettoyer sa ville de la criminalité
                     qui y règne.
                 </p><br><br>
-                <div class="gallery">
+                <div class="gallery flex-center align-center">
                     <div class="gallery-items">
                         <img src="Assets/Illustrations/Bathome9.png" alt="Alfred Pennyworth Michael">
                         <div class="desc">Alfred Pennyworth Michael <br> Cain (2006 2008 2012)</div>
@@ -132,7 +133,8 @@
                     </div>
                 </div>
             </section>
-        </div><br><br>
+        </div>
+
         <!-- JUSTICE LEAGUE -->
         <div class="ani">
             <section class="bloc">
@@ -145,12 +147,13 @@
                     <img src="Assets/Illustrations/Bathome11.png" alt="Justice League">
                 </div>
             </section>
-        </div><br>
+        </div>
+
         <!-- MULTIMEDIA -->
         <div class="ani">
             <section class="bloc">
                 <h1><strong>MULTIMÉDIA</strong></h1><br>
-                <div class="gallery">
+                <div class="gallery flex-center align-center">
                     <div class="grid">
                         <div class="col-1">
                             <a href=""><img class="fleche-g-d" src="Assets/Logos/icon_flèche_1.png" alt=""></a>
@@ -173,23 +176,27 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="col-1">
                             <a href=""><img class="fleche-g-d" src="Assets/Logos/icon_flèche_2.png" alt=""></a>
                         </div>
                     </div>
                 </div><br><br><br>
-                <div class="video">
-                    <video controls>
-                        <source src="Assets/Batman - The Dark Knight Rises - Bande Annonce Officielle (VF) - Christian Bale _ Christopher Nolan.mp4" type="video/mp4">
-                        </video>
-                </div><br>
-            </section><br>
+                <div class="video flex-center">
+                    <a href="#play"><img src="Assets/Logos/icon_player.png" alt=""></a>
+                    <div class=" flex-center">
+                        <video controls muted poster="">
+                            <source src="Assets/Batman - The Dark Knight Rises - Bande Annonce Officielle (VF) - Christian Bale _ Christopher Nolan.mp4" type="video/mp4">
+                            </video>
+                    </div>
+                </div>
+
+        </div><br>
+        </section><br>
         </div>
         <!-- ------------------------------------------------FORMULAIRE------------------------------------------------ -->
         <div id="formulaire">
             <form action="">
-                <p>PRENOMS CONTACT</p><br><br>
+                <p class="align-center">PRENOMS CONTACT</p><br><br>
                 <label for="">ADRESSE EMAIL</label><br><br>
                 <input class="f-control" placeholder="Adresse email" type="text" required><br><br>
                 <label for="">NEWSLETTER</label><br><br> <span>En cochant cette case vous acceptez de recevoir l’actualité concernant les aventures de Batman :</span>
@@ -214,36 +221,31 @@
                     <input type="radio" name="choix" class="choix choix3" id="c">
                     <label for="c">De tout</label>
                 </div><br><br>
-                <div class="confirmation">
+                <div class="confirmation flex-center">
                     <a class="btn" href="#popup1">CONFIRMER</a>
                 </div><br>
             </form>
         </div>
         <!-- -------------------------------------------POPPUP------------------------------------------------- -->
-        <div id="popup1" class="pop">
-            <div class="popup">
+        <div id="popup1" class="pop flex-center">
+            <div class="popup flex-center align-center">
                 <a class="close" href="#formulaire">&times</a>
                 <p>MESSAGE RECU!</p>
             </div>
         </div>
-        <!-- -------------------------------------------END POPPUP------------------------------------------------- -->
-
-        <!-- -------------------------------------END FORMULAIRE---------------------------------------------- -->
-
-        <!-- --------------------------------END MAIN------------------------------------------------- -->
 
         <!-- -------------------------------------------FOOTER----------------------------------------------- -->
-        <footer id="footer">
-            <div class="col-1 ">
+        <footer class="flex-center" id="footer">
+            <div class="col-1 flex-center">
                 <a href=""><img src="Assets/Logos/icon_guillemets_1.png" alt=""></a>
             </div>
             <div class="col-4">
-                <div class="col-4-1">
+                <div class="col-4-1 flex-center align-center">
                     <p> La seule façon raisonnable de vivre en ce bas monde,<br> c'est en dehors des règles. <br><br> The Dark Knight : Le Chevalier Noir -
                         <br> Le Joker à Batman (2008) <br>
                     </p><br>
                 </div>
-                <div class="col-4-2">
+                <div class="col-4-2 flex-center">
                     <label for="" class="ronde"></label>
                     <label for="" class="ronde"></label>
                     <label for="" class="ronde"></label>
@@ -255,16 +257,16 @@
                     <label for="" class="ronde"></label></div>
 
             </div>
-            <div class="col-1-r">
+            <div class="col-1-r flex-center">
                 <a href=""><img src="Assets/Logos/icon_guillemets_2.png" alt=""></a>
             </div>
         </footer>
-        <footer>
+        <footer class="flex-center">
             <img class="wb" src="Assets/Logos/icon_WB.png" alt="">
             <p class="ft">Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves</p>
 
         </footer>
-        <footer class="reseaux-socio-foot">
+        <footer class="reseaux-socio-foot flex-center">
             <a href=""><img src="Assets/Logos/logo_sayna_white.png" alt=""></a>
             <a href=""><img src="Assets/Logos/icon_x.png" alt=""></a>
             <a href=""><img src="Assets/Logos/icon_DC.png" alt=""></a>
