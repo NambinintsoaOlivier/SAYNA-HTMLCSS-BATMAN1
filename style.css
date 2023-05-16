@@ -29,7 +29,6 @@ body {
     font-family: 'Space Grotesk-regular';
     font-weight: normal;
     font-size: 18px;
-    letter-spacing: 1px;
     overflow-x: hidden;
 }
 
@@ -131,7 +130,7 @@ main {
 
 .div-center {
     text-align: center;
-    width: 45%;
+    width: 54%;
     min-width: 250px;
 }
 
@@ -222,7 +221,6 @@ aside a img:hover {
     border: 1px solid white;
     transform: scale(110%);
     transition: 0.300s;
-    /* width: 100%; */
 }
 
 .nemesis {
@@ -254,8 +252,6 @@ aside a img:hover {
     display: flex;
     align-items: center;
     width: 90%;
-    min-width: 650px;
-    max-height: 300px;
     margin: 30px auto;
 }
 
@@ -298,7 +294,7 @@ aside a img:hover {
 
 .box .col-3 div p {
     font-size: 14px;
-    width: 90%;
+    width: 100%;
 }
 
 h4 span {
@@ -571,16 +567,15 @@ footer .col-4-2 {
     .bloc p {
         font-size: 16px;
     }
+    .grid {
+        width: 100%;
+        min-width: 550px;
+    }
     .desc {
         font-size: 12px;
     }
-    .box .col-3 div p,
-    .box .col-3 h4 {
-        font-size: 13px;
-    }
-    .grid {
-        width: 69%;
-        min-width: 450px;
+    .box .col-3 div p {
+        font-size: 12px;
     }
     form {
         min-width: 350px;
@@ -600,16 +595,16 @@ footer .col-4-2 {
     .btn {
         font-size: 20px;
     }
-    .col-4-1 p {
+    /* .col-4-1 p {
         font-size: 10px;
-    }
+    } */
     footer .col-4-2 {
         grid-gap: 2px;
     }
-    .col-1 img,
+    /* .col-1 img,
     .col-1-r img {
         width: 70%;
-    }
+    } */
     .ft {
         font-size: 8px;
     }
@@ -727,6 +722,12 @@ footer .col-4-2 {
     footer {
         height: 168px;
     }
+    footer div a img {
+        width: 50px;
+    }
+    .col-4 .col-4-1 p {
+        font-size: 12px;
+    }
     .ft {
         font-size: 5px;
     }
@@ -740,7 +741,7 @@ footer .col-4-2 {
     }
 }
 
-@media all and (max-width: 414px) {
+@media all and (max-width: 450px) {
     main {
         left: 20px;
         right: 20px;
