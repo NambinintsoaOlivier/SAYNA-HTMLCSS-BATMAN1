@@ -82,7 +82,7 @@ nav {
     filter: invert(33%) sepia(100%) saturate(8);
 }
 
-.nav-link .a-home {
+.a-home {
     color: white;
     font-size: 25px;
 }
@@ -627,7 +627,7 @@ footer .col-4-2 {
     .navbar a img {
         width: 60px;
     }
-    .nav-link .a-home {
+    . .a-home {
         font-size: 18px;
     }
     .container {
@@ -756,7 +756,7 @@ footer .col-4-2 {
     .navbar a img {
         width: 2em;
     }
-    .nav-link .a-home {
+    . .a-home {
         font-size: 10px;
     }
     .container {
